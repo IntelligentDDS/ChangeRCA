@@ -1,0 +1,630 @@
+[INFO]2023-09-26 03:06:56,855 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:56,855 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:56,855 ranker.py:64: 2023-09-22_3.json, 2023-09-22 17:25:00, rca: adservice, label: adservice
+[INFO]2023-09-26 03:06:56,905 ranker.py:86: gray_change_result ('adservice', 1.0, 'gray', 2, 2)
+[INFO]2023-09-26 03:06:56,905 ranker.py:93: -------------gray change fault {'adservice': {'score': 1.0, 'fault_type': 'change'}} ----------------
+[INFO]2023-09-26 03:06:56,905 main.py:43: {'adservice': {'score': 1.0, 'fault_type': 'change'}}
+[INFO]2023-09-26 03:06:56,905 main.py:47: adservice, {'score': 1.0, 'fault_type': 'change'}, rank is 1
+[INFO]2023-09-26 03:06:56,905 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:56,905 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:56,905 ranker.py:64: 2023-09-22_9.json, 2023-09-22 22:10:01, rca: checkoutservice, label: productcatalogservice
+[INFO]2023-09-26 03:06:56,962 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:06:56,962 ranker.py:361: {'productcatalogservice': 0.6666666666666666, 'cartservice': 0.6666666666666666, 'checkoutservice': 1.0, 'shippingservice': 0.6666666666666666, 'paymentservice': 0.6666666666666666, 'emailservice': 0.6666666666666666}
+[INFO]2023-09-26 03:06:56,962 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:06:56,962 ranker.py:419: {'productcatalogservice': 0.8333333333333334, 'cartservice': 0.6666666666666666, 'checkoutservice': 0.6666666666666666, 'shippingservice': 0.6666666666666666, 'paymentservice': 0.8333333333333334, 'emailservice': 0.8333333333333334}
+[INFO]2023-09-26 03:06:57,021 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:06:57,022 difference.py:487: {'paymentservice': (0.0, 'gray', 0, 1), 'cartservice': (0.0, 'gray', 0, 1), 'productcatalogservice': (0.0, 'gray', 0, 1), 'shippingservice': (0.0, 'gray', 0, 1), 'emailservice': (0.0, 'gray', 0, 1), 'checkoutservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:06:57,066 ranker.py:215: difference_score: {'paymentservice': (0.0, 'gray', 0, 1), 'cartservice': (0.0, 'gray', 0, 1), 'productcatalogservice': (0.0, 'gray', 0, 1), 'shippingservice': (0.0, 'gray', 0, 1), 'emailservice': (0.0, 'gray', 0, 1), 'checkoutservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:06:57,066 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:06:57,066 ranker.py:131: 2023-09-22_9.json, 2023-09-22 22:10:01, rca: checkoutservice, label: productcatalogservice
+[INFO]2023-09-26 03:06:57,067 main.py:43: {'checkoutservice': {'score': 1.6666666666666665, 'fault_type': 'suspicious'}, 'productcatalogservice': {'score': 1.5, 'fault_type': 'suspicious'}, 'paymentservice': {'score': 1.5, 'fault_type': 'suspicious'}, 'emailservice': {'score': 1.5, 'fault_type': 'suspicious'}, 'shippingservice': {'score': 1.3333333333333333, 'fault_type': 'suspicious'}, 'cartservice': {'score': 1.3333333333333333, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:06:57,067 main.py:47: productcatalogservice, {'score': 1.5, 'fault_type': 'suspicious'}, rank is 2
+[INFO]2023-09-26 03:06:57,067 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:57,067 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:57,067 ranker.py:64: 2023-09-22_5.json, 2023-09-22 19:26:00, rca: checkoutservice, label: currencyservice
+[INFO]2023-09-26 03:06:57,068 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:06:57,068 ranker.py:361: {'currencyservice': 0.6666666666666666, 'adservice': 0.5, 'productcatalogservice': 0.6666666666666666, 'recommendationservice': 0.5, 'shippingservice': 0.6666666666666666}
+[INFO]2023-09-26 03:06:57,068 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:06:57,068 ranker.py:419: {'currencyservice': 0.8333333333333334, 'adservice': 0.6666666666666666, 'productcatalogservice': 0.6666666666666666, 'recommendationservice': 0.6666666666666666, 'shippingservice': 0.6666666666666666}
+[INFO]2023-09-26 03:06:57,102 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:06:57,102 difference.py:487: {'currencyservice': (0.0, 'gray', 0, 1), 'adservice': (0.0, 'gray', 0, 1), 'recommendationservice': (0.0, 'gray', 0, 2), 'productcatalogservice': (0.0, 'gray', 0, 2), 'shippingservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:06:57,137 ranker.py:215: difference_score: {'currencyservice': (0.0, 'gray', 0, 1), 'adservice': (0.0, 'gray', 0, 1), 'recommendationservice': (0.0, 'gray', 0, 2), 'productcatalogservice': (0.0, 'gray', 0, 2), 'shippingservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:06:57,137 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:06:57,137 ranker.py:131: 2023-09-22_5.json, 2023-09-22 19:26:00, rca: checkoutservice, label: currencyservice
+[INFO]2023-09-26 03:06:57,138 main.py:43: {'currencyservice': {'score': 1.5, 'fault_type': 'suspicious'}, 'shippingservice': {'score': 1.3333333333333333, 'fault_type': 'suspicious'}, 'productcatalogservice': {'score': 1.3333333333333333, 'fault_type': 'suspicious'}, 'recommendationservice': {'score': 1.1666666666666665, 'fault_type': 'suspicious'}, 'adservice': {'score': 1.1666666666666665, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:06:57,138 main.py:47: currencyservice, {'score': 1.5, 'fault_type': 'suspicious'}, rank is 1
+[INFO]2023-09-26 03:06:57,138 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:57,138 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:57,138 ranker.py:64: 2023-09-22_2.json, 2023-09-22 16:40:00, rca: adservice, label: adservice
+[INFO]2023-09-26 03:06:57,190 ranker.py:86: gray_change_result ('adservice', 1.0, 'gray', 1, 1)
+[INFO]2023-09-26 03:06:57,190 ranker.py:93: -------------gray change fault {'adservice': {'score': 1.0, 'fault_type': 'change'}} ----------------
+[INFO]2023-09-26 03:06:57,190 main.py:43: {'adservice': {'score': 1.0, 'fault_type': 'change'}}
+[INFO]2023-09-26 03:06:57,190 main.py:47: adservice, {'score': 1.0, 'fault_type': 'change'}, rank is 1
+[INFO]2023-09-26 03:06:57,191 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:57,191 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:57,191 ranker.py:64: 2023-09-22_1.json, 2023-09-22 15:59:00, rca: adservice, label: adservice
+[INFO]2023-09-26 03:06:57,239 ranker.py:86: gray_change_result ('adservice', 1.0, 'gray', 1, 1)
+[INFO]2023-09-26 03:06:57,239 ranker.py:93: -------------gray change fault {'adservice': {'score': 1.0, 'fault_type': 'change'}} ----------------
+[INFO]2023-09-26 03:06:57,239 main.py:43: {'adservice': {'score': 1.0, 'fault_type': 'change'}}
+[INFO]2023-09-26 03:06:57,240 main.py:47: adservice, {'score': 1.0, 'fault_type': 'change'}, rank is 1
+[INFO]2023-09-26 03:06:57,240 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:57,240 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:57,240 ranker.py:64: 2023-09-22_7.json, 2023-09-22 20:52:01, rca: checkoutservice, label: emailservice
+[INFO]2023-09-26 03:06:57,240 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:06:57,240 ranker.py:361: {'emailservice': 0.6666666666666666, 'cartservice': 0.6666666666666666, 'recommendationservice': 0.5}
+[INFO]2023-09-26 03:06:57,241 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:06:57,241 ranker.py:419: {'emailservice': 0.5, 'cartservice': 0.5, 'recommendationservice': 0.5}
+[INFO]2023-09-26 03:06:57,272 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:06:57,272 difference.py:487: {'recommendationservice': (0.0, 'gray', 0, 2), 'emailservice': (0.0, 'gray', 0, 1), 'cartservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:06:57,300 ranker.py:215: difference_score: {'recommendationservice': (0.0, 'gray', 0, 2), 'emailservice': (0.0, 'gray', 0, 1), 'cartservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:06:57,300 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:06:57,300 ranker.py:131: 2023-09-22_7.json, 2023-09-22 20:52:01, rca: checkoutservice, label: emailservice
+[INFO]2023-09-26 03:06:57,301 main.py:43: {'emailservice': {'score': 1.1666666666666665, 'fault_type': 'suspicious'}, 'cartservice': {'score': 1.1666666666666665, 'fault_type': 'suspicious'}, 'recommendationservice': {'score': 1.0, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:06:57,301 main.py:47: emailservice, {'score': 1.1666666666666665, 'fault_type': 'suspicious'}, rank is 1
+[INFO]2023-09-26 03:06:57,301 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:57,301 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:57,301 ranker.py:64: 2023-09-22_11.json, 2023-09-22 23:36:01, rca: productcatalogservice, label: productcatalogservice
+[INFO]2023-09-26 03:06:57,353 ranker.py:86: gray_change_result ('productcatalogservice', 1.0, 'gray', 1, 1)
+[INFO]2023-09-26 03:06:57,353 ranker.py:93: -------------gray change fault {'productcatalogservice': {'score': 1.0, 'fault_type': 'change'}} ----------------
+[INFO]2023-09-26 03:06:57,354 main.py:43: {'productcatalogservice': {'score': 1.0, 'fault_type': 'change'}}
+[INFO]2023-09-26 03:06:57,354 main.py:47: productcatalogservice, {'score': 1.0, 'fault_type': 'change'}, rank is 1
+[INFO]2023-09-26 03:06:57,354 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:57,354 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:57,354 ranker.py:64: 2023-09-22_10.json, 2023-09-22 22:56:01, rca: checkoutservice, label: productcatalogservice
+[INFO]2023-09-26 03:06:57,382 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:06:57,382 ranker.py:361: {'productcatalogservice': 0.6666666666666666, 'checkoutservice': 1.0, 'cartservice': 0.6666666666666666, 'shippingservice': 0.6666666666666666, 'currencyservice': 0.6666666666666666, 'paymentservice': 0.6666666666666666}
+[INFO]2023-09-26 03:06:57,382 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:06:57,382 ranker.py:419: {'productcatalogservice': 0.8333333333333334, 'checkoutservice': 0.6666666666666666, 'cartservice': 0.6666666666666666, 'shippingservice': 0.5, 'currencyservice': 0.6666666666666666, 'paymentservice': 0.8333333333333334}
+[INFO]2023-09-26 03:06:57,449 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:06:57,449 difference.py:487: {'shippingservice': (0.0, 'gray', 0, 1), 'cartservice': (0.0, 'gray', 0, 1), 'currencyservice': (0.0, 'gray', 0, 1), 'checkoutservice': (0.0, 'gray', 0, 1), 'paymentservice': (0.0, 'gray', 0, 1), 'productcatalogservice': (1.0, 'gray', 1, 1)}
+[INFO]2023-09-26 03:06:57,493 ranker.py:215: difference_score: {'shippingservice': (0.0, 'gray', 0, 1), 'cartservice': (0.0, 'gray', 0, 1), 'currencyservice': (0.0, 'gray', 0, 1), 'checkoutservice': (0.0, 'gray', 0, 1), 'paymentservice': (0.0, 'gray', 0, 1), 'productcatalogservice': (1.0, 'gray', 1, 1)}
+[INFO]2023-09-26 03:06:57,493 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:06:57,494 ranker.py:131: 2023-09-22_10.json, 2023-09-22 22:56:01, rca: checkoutservice, label: productcatalogservice
+[INFO]2023-09-26 03:06:57,494 main.py:43: {'productcatalogservice': {'score': 4.0, 'fault_type': 'change'}, 'checkoutservice': {'score': 1.6666666666666665, 'fault_type': 'suspicious'}, 'paymentservice': {'score': 1.5, 'fault_type': 'suspicious'}, 'currencyservice': {'score': 1.3333333333333333, 'fault_type': 'suspicious'}, 'cartservice': {'score': 1.3333333333333333, 'fault_type': 'suspicious'}, 'shippingservice': {'score': 1.1666666666666665, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:06:57,494 main.py:47: productcatalogservice, {'score': 4.0, 'fault_type': 'change'}, rank is 1
+[INFO]2023-09-26 03:06:57,494 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:57,494 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:57,494 ranker.py:64: 2023-09-22_8.json, 2023-09-22 21:26:01, rca: checkoutservice, label: emailservice
+[INFO]2023-09-26 03:06:57,495 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:06:57,495 ranker.py:361: {'emailservice': 0.6666666666666666, 'recommendationservice': 0.5, 'adservice': 0.5, 'cartservice': 0.6666666666666666, 'currencyservice': 0.6666666666666666, 'productcatalogservice': 0.6666666666666666}
+[INFO]2023-09-26 03:06:57,495 ranker.py:381: time score: recommendationservice, 0
+[INFO]2023-09-26 03:06:57,495 ranker.py:381: time score: cartservice, 0
+[INFO]2023-09-26 03:06:57,495 ranker.py:381: time score: currencyservice, 0
+[INFO]2023-09-26 03:06:57,495 ranker.py:381: time score: productcatalogservice, 0
+[INFO]2023-09-26 03:06:57,495 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:06:57,495 ranker.py:419: {'emailservice': 0.8333333333333334, 'recommendationservice': 0, 'adservice': 1.0, 'cartservice': 0, 'currencyservice': 0, 'productcatalogservice': 0}
+[ERROR]2023-09-26 03:06:57,504 difference.py:817: recommendationservice host list change is 0
+[ERROR]2023-09-26 03:06:57,505 difference.py:817: currencyservice host list change is 0
+[ERROR]2023-09-26 03:06:57,505 difference.py:817: cartservice host list change is 0
+[ERROR]2023-09-26 03:06:57,505 difference.py:817: productcatalogservice host list change is 0
+[INFO]2023-09-26 03:06:57,521 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:06:57,522 difference.py:487: {'emailservice': (0.0, 'gray', 0, 1), 'adservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:06:57,564 ranker.py:215: difference_score: {'emailservice': (0.0, 'gray', 0, 1), 'adservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:06:57,565 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:06:57,565 ranker.py:131: 2023-09-22_8.json, 2023-09-22 21:26:01, rca: checkoutservice, label: emailservice
+[INFO]2023-09-26 03:06:57,565 main.py:43: {'adservice': {'score': 1.5, 'fault_type': 'suspicious'}, 'emailservice': {'score': 1.5, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:06:57,565 main.py:47: emailservice, {'score': 1.5, 'fault_type': 'suspicious'}, rank is 2
+[INFO]2023-09-26 03:06:57,565 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:57,565 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:57,565 ranker.py:64: 2023-09-22_6.json, 2023-09-22 20:08:01, rca: checkoutservice, label: currencyservice
+[INFO]2023-09-26 03:06:57,591 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:06:57,591 ranker.py:361: {'currencyservice': 0.6666666666666666, 'paymentservice': 0.6666666666666666, 'emailservice': 0.6666666666666666, 'checkoutservice': 1.0, 'productcatalogservice': 0.6666666666666666}
+[INFO]2023-09-26 03:06:57,591 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:06:57,591 ranker.py:419: {'currencyservice': 0.8333333333333334, 'paymentservice': 0.5, 'emailservice': 0.6666666666666666, 'checkoutservice': 0.6666666666666666, 'productcatalogservice': 0.8333333333333334}
+[INFO]2023-09-26 03:06:57,658 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:06:57,658 difference.py:487: {'paymentservice': (0.0, 'gray', 0, 1), 'productcatalogservice': (0.0, 'gray', 0, 1), 'emailservice': (0.0, 'gray', 0, 1), 'checkoutservice': (0.0, 'gray', 0, 1), 'currencyservice': (1.0, 'gray', 1, 1)}
+[INFO]2023-09-26 03:06:57,694 ranker.py:215: difference_score: {'paymentservice': (0.0, 'gray', 0, 1), 'productcatalogservice': (0.0, 'gray', 0, 1), 'emailservice': (0.0, 'gray', 0, 1), 'checkoutservice': (0.0, 'gray', 0, 1), 'currencyservice': (1.0, 'gray', 1, 1)}
+[INFO]2023-09-26 03:06:57,694 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:06:57,694 ranker.py:131: 2023-09-22_6.json, 2023-09-22 20:08:01, rca: checkoutservice, label: currencyservice
+[INFO]2023-09-26 03:06:57,694 main.py:43: {'currencyservice': {'score': 4.0, 'fault_type': 'change'}, 'checkoutservice': {'score': 1.6666666666666665, 'fault_type': 'suspicious'}, 'productcatalogservice': {'score': 1.5, 'fault_type': 'suspicious'}, 'emailservice': {'score': 1.3333333333333333, 'fault_type': 'suspicious'}, 'paymentservice': {'score': 1.1666666666666665, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:06:57,694 main.py:47: currencyservice, {'score': 4.0, 'fault_type': 'change'}, rank is 1
+[INFO]2023-09-26 03:06:57,695 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:57,695 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:57,695 ranker.py:64: 2023-09-22_4.json, 2023-09-22 18:03:00, rca: checkoutservice, label: cartservice
+[INFO]2023-09-26 03:06:57,695 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:06:57,695 ranker.py:361: {'cartservice': 0.6666666666666666, 'currencyservice': 0.6666666666666666, 'emailservice': 0.6666666666666666, 'productcatalogservice': 0.6666666666666666}
+[INFO]2023-09-26 03:06:57,695 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:06:57,695 ranker.py:419: {'cartservice': 0.8333333333333334, 'currencyservice': 0.8333333333333334, 'emailservice': 0.6666666666666666, 'productcatalogservice': 0.6666666666666666}
+[INFO]2023-09-26 03:06:57,721 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:06:57,721 difference.py:487: {'cartservice': (0.0, 'gray', 0, 1), 'productcatalogservice': (0.0, 'gray', 0, 1), 'emailservice': (0.0, 'gray', 0, 1), 'currencyservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:06:57,754 ranker.py:215: difference_score: {'cartservice': (0.0, 'gray', 0, 1), 'productcatalogservice': (0.0, 'gray', 0, 1), 'emailservice': (0.0, 'gray', 0, 1), 'currencyservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:06:57,754 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:06:57,754 ranker.py:131: 2023-09-22_4.json, 2023-09-22 18:03:00, rca: checkoutservice, label: cartservice
+[INFO]2023-09-26 03:06:57,754 main.py:43: {'currencyservice': {'score': 1.5, 'fault_type': 'suspicious'}, 'cartservice': {'score': 1.5, 'fault_type': 'suspicious'}, 'emailservice': {'score': 1.3333333333333333, 'fault_type': 'suspicious'}, 'productcatalogservice': {'score': 1.3333333333333333, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:06:57,754 main.py:47: cartservice, {'score': 1.5, 'fault_type': 'suspicious'}, rank is 2
+[INFO]2023-09-26 03:06:57,755 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:57,755 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:57,755 ranker.py:64: 2023-09-23_11.json, 2023-09-23 11:32:23, rca: frontend, label: checkoutservice
+[INFO]2023-09-26 03:06:57,756 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:06:57,756 ranker.py:361: {'checkoutservice': 0.6666666666666666, 'adservice': 0.6666666666666666, 'paymentservice': 0.5, 'recommendationservice': 0.6666666666666666, 'currencyservice': 0.6666666666666666, 'shippingservice': 0.6666666666666666}
+[INFO]2023-09-26 03:06:57,756 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:06:57,756 ranker.py:419: {'checkoutservice': 0.8333333333333334, 'adservice': 0.5, 'paymentservice': 0.8333333333333334, 'recommendationservice': 1.0, 'currencyservice': 0.8333333333333334, 'shippingservice': 0.6666666666666666}
+[INFO]2023-09-26 03:06:57,824 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:06:57,825 difference.py:487: {'adservice': (0.0, 'gray', 0, 1), 'currencyservice': (0.0, 'gray', 0, 1), 'recommendationservice': (0.0, 'gray', 0, 2), 'paymentservice': (0.0, 'gray', 0, 1), 'shippingservice': (0.0, 'gray', 0, 1), 'checkoutservice': (1.0, 'gray', 1, 1)}
+[INFO]2023-09-26 03:06:57,866 ranker.py:215: difference_score: {'adservice': (0.0, 'gray', 0, 1), 'currencyservice': (0.0, 'gray', 0, 1), 'recommendationservice': (0.0, 'gray', 0, 2), 'paymentservice': (0.0, 'gray', 0, 1), 'shippingservice': (0.0, 'gray', 0, 1), 'checkoutservice': (1.0, 'gray', 1, 1)}
+[INFO]2023-09-26 03:06:57,867 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:06:57,867 ranker.py:131: 2023-09-23_11.json, 2023-09-23 11:32:23, rca: frontend, label: checkoutservice
+[INFO]2023-09-26 03:06:57,867 main.py:43: {'checkoutservice': {'score': 4.0, 'fault_type': 'change'}, 'recommendationservice': {'score': 1.6666666666666665, 'fault_type': 'suspicious'}, 'currencyservice': {'score': 1.5, 'fault_type': 'suspicious'}, 'paymentservice': {'score': 1.3333333333333335, 'fault_type': 'suspicious'}, 'shippingservice': {'score': 1.3333333333333333, 'fault_type': 'suspicious'}, 'adservice': {'score': 1.1666666666666665, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:06:57,867 main.py:47: checkoutservice, {'score': 4.0, 'fault_type': 'change'}, rank is 1
+[INFO]2023-09-26 03:06:57,867 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:57,867 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:57,867 ranker.py:64: 2023-09-23_4.json, 2023-09-23 04:34:23, rca: checkoutservice, label: cartservice
+[INFO]2023-09-26 03:06:57,868 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:06:57,868 ranker.py:361: {'cartservice': 0.6666666666666666, 'emailservice': 0.6666666666666666, 'productcatalogservice': 0.6666666666666666}
+[INFO]2023-09-26 03:06:57,868 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:06:57,868 ranker.py:419: {'cartservice': 0.8333333333333334, 'emailservice': 1.0, 'productcatalogservice': 0.6666666666666666}
+[INFO]2023-09-26 03:06:57,901 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:06:57,901 difference.py:487: {'productcatalogservice': (0.0, 'gray', 0, 1), 'cartservice': (0.0, 'gray', 0, 1), 'emailservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:06:57,931 ranker.py:215: difference_score: {'productcatalogservice': (0.0, 'gray', 0, 1), 'cartservice': (0.0, 'gray', 0, 1), 'emailservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:06:57,932 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:06:57,932 ranker.py:131: 2023-09-23_4.json, 2023-09-23 04:34:23, rca: checkoutservice, label: cartservice
+[INFO]2023-09-26 03:06:57,932 main.py:43: {'emailservice': {'score': 1.6666666666666665, 'fault_type': 'suspicious'}, 'cartservice': {'score': 1.5, 'fault_type': 'suspicious'}, 'productcatalogservice': {'score': 1.3333333333333333, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:06:57,932 main.py:47: cartservice, {'score': 1.5, 'fault_type': 'suspicious'}, rank is 2
+[INFO]2023-09-26 03:06:57,932 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:57,932 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:57,932 ranker.py:64: 2023-09-23_2.json, 2023-09-23 03:12:23, rca: adservice, label: adservice
+[INFO]2023-09-26 03:06:57,985 ranker.py:86: gray_change_result ('adservice', 1.0, 'gray', 1, 1)
+[INFO]2023-09-26 03:06:57,985 ranker.py:93: -------------gray change fault {'adservice': {'score': 1.0, 'fault_type': 'change'}} ----------------
+[INFO]2023-09-26 03:06:57,985 main.py:43: {'adservice': {'score': 1.0, 'fault_type': 'change'}}
+[INFO]2023-09-26 03:06:57,985 main.py:47: adservice, {'score': 1.0, 'fault_type': 'change'}, rank is 1
+[INFO]2023-09-26 03:06:57,986 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:57,986 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:57,986 ranker.py:64: 2023-09-23_6.json, 2023-09-23 07:17:23, rca: frontend, label: emailservice
+[INFO]2023-09-26 03:06:57,986 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:06:57,986 ranker.py:361: {'emailservice': 0.5, 'currencyservice': 0.6666666666666666, 'recommendationservice': 0.6666666666666666, 'checkoutservice': 0.6666666666666666}
+[INFO]2023-09-26 03:06:57,987 ranker.py:381: time score: currencyservice, 0
+[INFO]2023-09-26 03:06:57,987 ranker.py:381: time score: checkoutservice, 0
+[INFO]2023-09-26 03:06:57,987 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:06:57,987 ranker.py:419: {'emailservice': 1.0, 'currencyservice': 0, 'recommendationservice': 0.6666666666666666, 'checkoutservice': 0}
+[ERROR]2023-09-26 03:06:57,996 difference.py:817: currencyservice host list change is 0
+[ERROR]2023-09-26 03:06:57,997 difference.py:817: checkoutservice host list change is 0
+[INFO]2023-09-26 03:06:58,012 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:06:58,012 difference.py:487: {'emailservice': (0.0, 'gray', 0, 1), 'recommendationservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:06:58,044 ranker.py:215: difference_score: {'emailservice': (0.0, 'gray', 0, 1), 'recommendationservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:06:58,044 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:06:58,044 ranker.py:131: 2023-09-23_6.json, 2023-09-23 07:17:23, rca: frontend, label: emailservice
+[INFO]2023-09-26 03:06:58,045 main.py:43: {'emailservice': {'score': 1.5, 'fault_type': 'suspicious'}, 'recommendationservice': {'score': 1.3333333333333333, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:06:58,045 main.py:47: emailservice, {'score': 1.5, 'fault_type': 'suspicious'}, rank is 1
+[INFO]2023-09-26 03:06:58,045 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:58,045 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:58,045 ranker.py:64: 2023-09-23_9.json, 2023-09-23 10:04:23, rca: productcatalogservice, label: productcatalogservice
+[INFO]2023-09-26 03:06:58,095 ranker.py:86: gray_change_result ('productcatalogservice', 1.0, 'gray', 2, 2)
+[INFO]2023-09-26 03:06:58,095 ranker.py:93: -------------gray change fault {'productcatalogservice': {'score': 1.0, 'fault_type': 'change'}} ----------------
+[INFO]2023-09-26 03:06:58,096 main.py:43: {'productcatalogservice': {'score': 1.0, 'fault_type': 'change'}}
+[INFO]2023-09-26 03:06:58,096 main.py:47: productcatalogservice, {'score': 1.0, 'fault_type': 'change'}, rank is 1
+[INFO]2023-09-26 03:06:58,096 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:58,096 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:58,096 ranker.py:64: 2023-09-23_17.json, 2023-09-23 18:30:23, rca: currencyservice, label: cartservice
+[INFO]2023-09-26 03:06:58,097 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:06:58,097 ranker.py:361: {'cartservice': 0.5, 'checkoutservice': 0.6666666666666666, 'paymentservice': 0.5, 'adservice': 0.5, 'shippingservice': 0.5, 'recommendationservice': 0.5}
+[INFO]2023-09-26 03:06:58,097 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:06:58,097 ranker.py:419: {'cartservice': 0.8333333333333334, 'checkoutservice': 0.5, 'paymentservice': 0.5, 'adservice': 0.6666666666666666, 'shippingservice': 0.6666666666666666, 'recommendationservice': 0.6666666666666666}
+[INFO]2023-09-26 03:06:58,182 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:06:58,182 difference.py:487: {'cartservice': (0.0, 'gray', 0, 1), 'adservice': (0.0, 'gray', 0, 2), 'paymentservice': (0.0, 'gray', 0, 1), 'shippingservice': (0.0, 'gray', 0, 1), 'recommendationservice': (0.0, 'gray', 0, 2), 'checkoutservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:06:58,222 ranker.py:215: difference_score: {'cartservice': (0.0, 'gray', 0, 1), 'adservice': (0.0, 'gray', 0, 2), 'paymentservice': (0.0, 'gray', 0, 1), 'shippingservice': (0.0, 'gray', 0, 1), 'recommendationservice': (0.0, 'gray', 0, 2), 'checkoutservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:06:58,222 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:06:58,222 ranker.py:131: 2023-09-23_17.json, 2023-09-23 18:30:23, rca: currencyservice, label: cartservice
+[INFO]2023-09-26 03:06:58,222 main.py:43: {'cartservice': {'score': 1.3333333333333335, 'fault_type': 'suspicious'}, 'shippingservice': {'score': 1.1666666666666665, 'fault_type': 'suspicious'}, 'checkoutservice': {'score': 1.1666666666666665, 'fault_type': 'suspicious'}, 'recommendationservice': {'score': 1.1666666666666665, 'fault_type': 'suspicious'}, 'adservice': {'score': 1.1666666666666665, 'fault_type': 'suspicious'}, 'paymentservice': {'score': 1.0, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:06:58,222 main.py:47: cartservice, {'score': 1.3333333333333335, 'fault_type': 'suspicious'}, rank is 1
+[INFO]2023-09-26 03:06:58,223 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:58,223 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:58,223 ranker.py:64: 2023-09-23_5.json, 2023-09-23 06:38:23, rca: checkoutservice, label: currencyservice
+[INFO]2023-09-26 03:06:58,223 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:06:58,223 ranker.py:361: {'currencyservice': 0.6666666666666666, 'emailservice': 0.6666666666666666, 'cartservice': 0.6666666666666666, 'paymentservice': 0.6666666666666666}
+[INFO]2023-09-26 03:06:58,223 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:06:58,223 ranker.py:419: {'currencyservice': 0.8333333333333334, 'emailservice': 1.0, 'cartservice': 0.6666666666666666, 'paymentservice': 0.6666666666666666}
+[INFO]2023-09-26 03:06:58,292 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:06:58,292 difference.py:487: {'emailservice': (0.0, 'gray', 0, 1), 'cartservice': (0.0, 'gray', 0, 1), 'paymentservice': (0.0, 'gray', 0, 1), 'currencyservice': (1.0, 'gray', 1, 1)}
+[INFO]2023-09-26 03:06:58,326 ranker.py:215: difference_score: {'emailservice': (0.0, 'gray', 0, 1), 'cartservice': (0.0, 'gray', 0, 1), 'paymentservice': (0.0, 'gray', 0, 1), 'currencyservice': (1.0, 'gray', 1, 1)}
+[INFO]2023-09-26 03:06:58,326 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:06:58,326 ranker.py:131: 2023-09-23_5.json, 2023-09-23 06:38:23, rca: checkoutservice, label: currencyservice
+[INFO]2023-09-26 03:06:58,326 main.py:43: {'currencyservice': {'score': 4.0, 'fault_type': 'change'}, 'emailservice': {'score': 1.6666666666666665, 'fault_type': 'suspicious'}, 'cartservice': {'score': 1.3333333333333333, 'fault_type': 'suspicious'}, 'paymentservice': {'score': 1.3333333333333333, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:06:58,326 main.py:47: currencyservice, {'score': 4.0, 'fault_type': 'change'}, rank is 1
+[INFO]2023-09-26 03:06:58,327 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:58,327 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:58,327 ranker.py:64: 2023-09-23_3.json, 2023-09-23 03:54:23, rca: frontend, label: adservice
+[INFO]2023-09-26 03:06:58,327 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:06:58,327 ranker.py:361: {'adservice': 0.6666666666666666, 'currencyservice': 0.6666666666666666, 'emailservice': 0.5, 'shippingservice': 0.6666666666666666, 'paymentservice': 0.5}
+[INFO]2023-09-26 03:06:58,328 ranker.py:381: time score: paymentservice, 0
+[INFO]2023-09-26 03:06:58,328 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:06:58,328 ranker.py:419: {'adservice': 1.0, 'currencyservice': 0.6666666666666666, 'emailservice': 0.6666666666666666, 'shippingservice': 0.6666666666666666, 'paymentservice': 0}
+[ERROR]2023-09-26 03:06:58,338 difference.py:817: paymentservice host list change is 0
+[INFO]2023-09-26 03:06:58,391 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:06:58,392 difference.py:487: {'currencyservice': (0.0, 'gray', 0, 1), 'emailservice': (0.0, 'gray', 0, 1), 'shippingservice': (0.0, 'gray', 0, 1), 'adservice': (1.0, 'gray', 1, 1)}
+[INFO]2023-09-26 03:06:58,425 ranker.py:215: difference_score: {'currencyservice': (0.0, 'gray', 0, 1), 'emailservice': (0.0, 'gray', 0, 1), 'shippingservice': (0.0, 'gray', 0, 1), 'adservice': (1.0, 'gray', 1, 1)}
+[INFO]2023-09-26 03:06:58,426 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:06:58,426 ranker.py:131: 2023-09-23_3.json, 2023-09-23 03:54:23, rca: frontend, label: adservice
+[INFO]2023-09-26 03:06:58,426 main.py:43: {'adservice': {'score': 4.0, 'fault_type': 'change'}, 'shippingservice': {'score': 1.3333333333333333, 'fault_type': 'suspicious'}, 'currencyservice': {'score': 1.3333333333333333, 'fault_type': 'suspicious'}, 'emailservice': {'score': 1.1666666666666665, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:06:58,426 main.py:47: adservice, {'score': 4.0, 'fault_type': 'change'}, rank is 1
+[INFO]2023-09-26 03:06:58,426 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:58,426 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:58,426 ranker.py:64: 2023-09-23_10.json, 2023-09-23 10:48:24, rca: recommendationservice, label: recommendationservice
+[INFO]2023-09-26 03:06:58,477 ranker.py:86: gray_change_result ('recommendationservice', 1.0, 'gray', 1, 1)
+[INFO]2023-09-26 03:06:58,477 ranker.py:93: -------------gray change fault {'recommendationservice': {'score': 1.0, 'fault_type': 'change'}} ----------------
+[INFO]2023-09-26 03:06:58,478 main.py:43: {'recommendationservice': {'score': 1.0, 'fault_type': 'change'}}
+[INFO]2023-09-26 03:06:58,478 main.py:47: recommendationservice, {'score': 1.0, 'fault_type': 'change'}, rank is 1
+[INFO]2023-09-26 03:06:58,478 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:58,478 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:58,478 ranker.py:64: 2023-09-23_14.json, 2023-09-23 15:41:23, rca: adservice, label: adservice
+[INFO]2023-09-26 03:06:58,534 ranker.py:86: gray_change_result ('adservice', 1.0, 'gray', 1, 1)
+[INFO]2023-09-26 03:06:58,534 ranker.py:93: -------------gray change fault {'adservice': {'score': 1.0, 'fault_type': 'change'}} ----------------
+[INFO]2023-09-26 03:06:58,535 main.py:43: {'adservice': {'score': 1.0, 'fault_type': 'change'}}
+[INFO]2023-09-26 03:06:58,535 main.py:47: adservice, {'score': 1.0, 'fault_type': 'change'}, rank is 1
+[INFO]2023-09-26 03:06:58,535 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:58,535 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:58,535 ranker.py:64: 2023-09-23_7.json, 2023-09-23 08:00:23, rca: emailservice, label: emailservice
+[INFO]2023-09-26 03:06:58,562 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:06:58,562 ranker.py:361: {'emailservice': 1.0, 'checkoutservice': 0.6666666666666666, 'currencyservice': 0.5, 'cartservice': 0.5, 'shippingservice': 0.5}
+[INFO]2023-09-26 03:06:58,562 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:06:58,562 ranker.py:419: {'emailservice': 0.6666666666666666, 'checkoutservice': 0.6666666666666666, 'currencyservice': 0.5, 'cartservice': 1.0, 'shippingservice': 1.0}
+[INFO]2023-09-26 03:06:58,623 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:06:58,624 difference.py:487: {'emailservice': (0.0, 'gray', 0, 1), 'shippingservice': (0.0, 'gray', 0, 1), 'cartservice': (0.0, 'gray', 0, 1), 'currencyservice': (0.0, 'gray', 0, 1), 'checkoutservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:06:58,654 ranker.py:215: difference_score: {'emailservice': (0.0, 'gray', 0, 1), 'shippingservice': (0.0, 'gray', 0, 1), 'cartservice': (0.0, 'gray', 0, 1), 'currencyservice': (0.0, 'gray', 0, 1), 'checkoutservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:06:58,655 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:06:58,655 ranker.py:131: 2023-09-23_7.json, 2023-09-23 08:00:23, rca: emailservice, label: emailservice
+[INFO]2023-09-26 03:06:58,655 main.py:43: {'emailservice': {'score': 1.6666666666666665, 'fault_type': 'suspicious'}, 'shippingservice': {'score': 1.5, 'fault_type': 'suspicious'}, 'cartservice': {'score': 1.5, 'fault_type': 'suspicious'}, 'checkoutservice': {'score': 1.3333333333333333, 'fault_type': 'suspicious'}, 'currencyservice': {'score': 1.0, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:06:58,655 main.py:47: emailservice, {'score': 1.6666666666666665, 'fault_type': 'suspicious'}, rank is 1
+[INFO]2023-09-26 03:06:58,655 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:58,655 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:58,656 ranker.py:64: 2023-09-23_13.json, 2023-09-23 12:57:23, rca: frontend, label: checkoutservice
+[INFO]2023-09-26 03:06:58,656 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:06:58,656 ranker.py:361: {'checkoutservice': 0.6666666666666666}
+[INFO]2023-09-26 03:06:58,656 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:06:58,656 ranker.py:419: {'checkoutservice': 0.5}
+[INFO]2023-09-26 03:06:58,682 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:06:58,683 difference.py:487: {'checkoutservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:06:58,709 ranker.py:215: difference_score: {'checkoutservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:06:58,709 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:06:58,709 ranker.py:131: 2023-09-23_13.json, 2023-09-23 12:57:23, rca: frontend, label: checkoutservice
+[INFO]2023-09-26 03:06:58,709 main.py:43: {'checkoutservice': {'score': 1.1666666666666665, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:06:58,709 main.py:47: checkoutservice, {'score': 1.1666666666666665, 'fault_type': 'suspicious'}, rank is 1
+[INFO]2023-09-26 03:06:58,709 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:58,709 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:58,709 ranker.py:64: 2023-09-23_18.json, 2023-09-23 19:50:24, rca: checkoutservice, label: currencyservice
+[INFO]2023-09-26 03:06:58,711 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:06:58,711 ranker.py:361: {'currencyservice': 0.6666666666666666, 'productcatalogservice': 0.6666666666666666, 'checkoutservice': 1.0, 'adservice': 0.5, 'cartservice': 0.6666666666666666, 'emailservice': 0.6666666666666666}
+[INFO]2023-09-26 03:06:58,711 ranker.py:381: time score: checkoutservice, 0
+[INFO]2023-09-26 03:06:58,711 ranker.py:381: time score: cartservice, 0
+[INFO]2023-09-26 03:06:58,711 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:06:58,711 ranker.py:419: {'currencyservice': 0.8333333333333334, 'productcatalogservice': 0.8333333333333334, 'checkoutservice': 0, 'adservice': 0.6666666666666666, 'cartservice': 0, 'emailservice': 0.8333333333333334}
+[ERROR]2023-09-26 03:06:58,721 difference.py:817: cartservice host list change is 0
+[ERROR]2023-09-26 03:06:58,721 difference.py:817: checkoutservice host list change is 0
+[INFO]2023-09-26 03:06:58,775 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:06:58,775 difference.py:487: {'productcatalogservice': (0.0, 'gray', 0, 2), 'emailservice': (0.0, 'gray', 0, 1), 'adservice': (0.0, 'gray', 0, 1), 'currencyservice': (1.0, 'gray', 1, 1)}
+[INFO]2023-09-26 03:06:58,817 ranker.py:215: difference_score: {'productcatalogservice': (0.0, 'gray', 0, 2), 'emailservice': (0.0, 'gray', 0, 1), 'adservice': (0.0, 'gray', 0, 1), 'currencyservice': (1.0, 'gray', 1, 1)}
+[INFO]2023-09-26 03:06:58,817 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:06:58,817 ranker.py:131: 2023-09-23_18.json, 2023-09-23 19:50:24, rca: checkoutservice, label: currencyservice
+[INFO]2023-09-26 03:06:58,818 main.py:43: {'currencyservice': {'score': 4.0, 'fault_type': 'change'}, 'productcatalogservice': {'score': 1.5, 'fault_type': 'suspicious'}, 'emailservice': {'score': 1.5, 'fault_type': 'suspicious'}, 'adservice': {'score': 1.1666666666666665, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:06:58,818 main.py:47: currencyservice, {'score': 4.0, 'fault_type': 'change'}, rank is 1
+[INFO]2023-09-26 03:06:58,818 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:58,818 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:58,818 ranker.py:64: 2023-09-23_16.json, 2023-09-23 17:09:23, rca: frontend, label: adservice
+[INFO]2023-09-26 03:06:58,819 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:06:58,819 ranker.py:361: {'adservice': 0.6666666666666666, 'shippingservice': 0.6666666666666666, 'productcatalogservice': 0.6666666666666666, 'currencyservice': 0.6666666666666666}
+[INFO]2023-09-26 03:06:58,819 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:06:58,819 ranker.py:419: {'adservice': 1.0, 'shippingservice': 0.5, 'productcatalogservice': 0.8333333333333334, 'currencyservice': 0.5}
+[INFO]2023-09-26 03:06:58,891 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:06:58,891 difference.py:487: {'shippingservice': (0.0, 'gray', 0, 1), 'productcatalogservice': (0.0, 'gray', 0, 3), 'currencyservice': (0.0, 'gray', 0, 1), 'adservice': (0.3333333333333333, 'gray', 1, 3)}
+[INFO]2023-09-26 03:06:58,923 ranker.py:215: difference_score: {'shippingservice': (0.0, 'gray', 0, 1), 'productcatalogservice': (0.0, 'gray', 0, 3), 'currencyservice': (0.0, 'gray', 0, 1), 'adservice': (0.3333333333333333, 'gray', 1, 3)}
+[INFO]2023-09-26 03:06:58,924 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:06:58,924 ranker.py:131: 2023-09-23_16.json, 2023-09-23 17:09:23, rca: frontend, label: adservice
+[INFO]2023-09-26 03:06:58,924 main.py:43: {'adservice': {'score': 2.0, 'fault_type': 'suspicious'}, 'productcatalogservice': {'score': 1.5, 'fault_type': 'suspicious'}, 'currencyservice': {'score': 1.1666666666666665, 'fault_type': 'suspicious'}, 'shippingservice': {'score': 1.1666666666666665, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:06:58,924 main.py:47: adservice, {'score': 2.0, 'fault_type': 'suspicious'}, rank is 1
+[INFO]2023-09-26 03:06:58,924 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:58,924 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:58,924 ranker.py:64: 2023-09-23_12.json, 2023-09-23 12:12:23, rca: frontend, label: checkoutservice
+[INFO]2023-09-26 03:06:58,925 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:06:58,925 ranker.py:361: {'checkoutservice': 0.6666666666666666, 'paymentservice': 0.5, 'recommendationservice': 0.6666666666666666, 'adservice': 0.6666666666666666}
+[INFO]2023-09-26 03:06:58,925 ranker.py:381: time score: adservice, 0
+[INFO]2023-09-26 03:06:58,925 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:06:58,925 ranker.py:419: {'checkoutservice': 0.8333333333333334, 'paymentservice': 1.0, 'recommendationservice': 0.6666666666666666, 'adservice': 0}
+[ERROR]2023-09-26 03:06:58,935 difference.py:817: adservice host list change is 0
+[INFO]2023-09-26 03:06:58,994 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:06:58,995 difference.py:487: {'recommendationservice': (0.0, 'gray', 0, 1), 'paymentservice': (0.0, 'gray', 0, 1), 'checkoutservice': (1.0, 'gray', 1, 1)}
+[INFO]2023-09-26 03:06:59,025 ranker.py:215: difference_score: {'recommendationservice': (0.0, 'gray', 0, 1), 'paymentservice': (0.0, 'gray', 0, 1), 'checkoutservice': (1.0, 'gray', 1, 1)}
+[INFO]2023-09-26 03:06:59,025 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:06:59,025 ranker.py:131: 2023-09-23_12.json, 2023-09-23 12:12:23, rca: frontend, label: checkoutservice
+[INFO]2023-09-26 03:06:59,025 main.py:43: {'checkoutservice': {'score': 4.0, 'fault_type': 'change'}, 'paymentservice': {'score': 1.5, 'fault_type': 'suspicious'}, 'recommendationservice': {'score': 1.3333333333333333, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:06:59,025 main.py:47: checkoutservice, {'score': 4.0, 'fault_type': 'change'}, rank is 1
+[INFO]2023-09-26 03:06:59,026 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:59,026 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:59,026 ranker.py:64: 2023-09-23_15.json, 2023-09-23 16:24:23, rca: adservice, label: adservice
+[INFO]2023-09-26 03:06:59,076 ranker.py:86: gray_change_result ('adservice', 1.0, 'gray', 2, 2)
+[INFO]2023-09-26 03:06:59,076 ranker.py:93: -------------gray change fault {'adservice': {'score': 1.0, 'fault_type': 'change'}} ----------------
+[INFO]2023-09-26 03:06:59,076 main.py:43: {'adservice': {'score': 1.0, 'fault_type': 'change'}}
+[INFO]2023-09-26 03:06:59,076 main.py:47: adservice, {'score': 1.0, 'fault_type': 'change'}, rank is 1
+[INFO]2023-09-26 03:06:59,077 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:59,077 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:59,077 ranker.py:64: 2023-09-23_21.json, 2023-09-23 22:35:24, rca: productcatalogservice, label: productcatalogservice
+[INFO]2023-09-26 03:06:59,127 ranker.py:86: gray_change_result ('productcatalogservice', 1.0, 'gray', 1, 1)
+[INFO]2023-09-26 03:06:59,127 ranker.py:93: -------------gray change fault {'productcatalogservice': {'score': 1.0, 'fault_type': 'change'}} ----------------
+[INFO]2023-09-26 03:06:59,127 main.py:43: {'productcatalogservice': {'score': 1.0, 'fault_type': 'change'}}
+[INFO]2023-09-26 03:06:59,127 main.py:47: productcatalogservice, {'score': 1.0, 'fault_type': 'change'}, rank is 1
+[INFO]2023-09-26 03:06:59,127 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:59,128 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:59,128 ranker.py:64: 2023-09-23_19.json, 2023-09-23 21:13:23, rca: emailservice, label: emailservice
+[INFO]2023-09-26 03:06:59,153 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:06:59,153 ranker.py:361: {'emailservice': 1.0, 'cartservice': 0.5, 'currencyservice': 0.5, 'shippingservice': 0.5}
+[INFO]2023-09-26 03:06:59,153 ranker.py:381: time score: cartservice, 0
+[INFO]2023-09-26 03:06:59,153 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:06:59,153 ranker.py:419: {'emailservice': 0.8333333333333334, 'cartservice': 0, 'currencyservice': 0.6666666666666666, 'shippingservice': 0.8333333333333334}
+[ERROR]2023-09-26 03:06:59,162 difference.py:817: cartservice host list change is 0
+[INFO]2023-09-26 03:06:59,182 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:06:59,182 difference.py:487: {'emailservice': (0.0, 'gray', 0, 1), 'currencyservice': (0.0, 'gray', 0, 1), 'shippingservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:06:59,218 ranker.py:215: difference_score: {'emailservice': (0.0, 'gray', 0, 1), 'currencyservice': (0.0, 'gray', 0, 1), 'shippingservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:06:59,219 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:06:59,219 ranker.py:131: 2023-09-23_19.json, 2023-09-23 21:13:23, rca: emailservice, label: emailservice
+[INFO]2023-09-26 03:06:59,219 main.py:43: {'emailservice': {'score': 1.8333333333333335, 'fault_type': 'suspicious'}, 'shippingservice': {'score': 1.3333333333333335, 'fault_type': 'suspicious'}, 'currencyservice': {'score': 1.1666666666666665, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:06:59,219 main.py:47: emailservice, {'score': 1.8333333333333335, 'fault_type': 'suspicious'}, rank is 1
+[INFO]2023-09-26 03:06:59,219 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:59,219 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:59,219 ranker.py:64: 2023-09-23_1.json, 2023-09-23 02:27:23, rca: adservice, label: adservice
+[INFO]2023-09-26 03:06:59,267 ranker.py:86: gray_change_result ('adservice', 1.0, 'gray', 1, 1)
+[INFO]2023-09-26 03:06:59,267 ranker.py:93: -------------gray change fault {'adservice': {'score': 1.0, 'fault_type': 'change'}} ----------------
+[INFO]2023-09-26 03:06:59,268 main.py:43: {'adservice': {'score': 1.0, 'fault_type': 'change'}}
+[INFO]2023-09-26 03:06:59,268 main.py:47: adservice, {'score': 1.0, 'fault_type': 'change'}, rank is 1
+[INFO]2023-09-26 03:06:59,268 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:59,268 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:59,268 ranker.py:64: 2023-09-23_22.json, 2023-09-23 23:17:23, rca: checkoutservice, label: productcatalogservice
+[INFO]2023-09-26 03:06:59,269 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:06:59,269 ranker.py:361: {'productcatalogservice': 0.6666666666666666, 'adservice': 0.5, 'currencyservice': 0.6666666666666666, 'paymentservice': 0.6666666666666666, 'shippingservice': 0.6666666666666666, 'cartservice': 0.6666666666666666}
+[INFO]2023-09-26 03:06:59,269 ranker.py:381: time score: paymentservice, 0
+[INFO]2023-09-26 03:06:59,269 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:06:59,269 ranker.py:419: {'productcatalogservice': 0.8333333333333334, 'adservice': 0.6666666666666666, 'currencyservice': 0.8333333333333334, 'paymentservice': 0, 'shippingservice': 1.0, 'cartservice': 0.8333333333333334}
+[ERROR]2023-09-26 03:06:59,279 difference.py:817: paymentservice host list change is 0
+[INFO]2023-09-26 03:06:59,338 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:06:59,339 difference.py:487: {'currencyservice': (0.0, 'gray', 0, 1), 'adservice': (0.0, 'gray', 0, 2), 'shippingservice': (0.0, 'gray', 0, 1), 'cartservice': (0.0, 'gray', 0, 1), 'productcatalogservice': (1.0, 'gray', 2, 2)}
+[INFO]2023-09-26 03:06:59,382 ranker.py:215: difference_score: {'currencyservice': (0.0, 'gray', 0, 1), 'adservice': (0.0, 'gray', 0, 2), 'shippingservice': (0.0, 'gray', 0, 1), 'cartservice': (0.0, 'gray', 0, 1), 'productcatalogservice': (1.0, 'gray', 2, 2)}
+[INFO]2023-09-26 03:06:59,382 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:06:59,382 ranker.py:131: 2023-09-23_22.json, 2023-09-23 23:17:23, rca: checkoutservice, label: productcatalogservice
+[INFO]2023-09-26 03:06:59,382 main.py:43: {'productcatalogservice': {'score': 4.0, 'fault_type': 'change'}, 'shippingservice': {'score': 1.6666666666666665, 'fault_type': 'suspicious'}, 'cartservice': {'score': 1.5, 'fault_type': 'suspicious'}, 'currencyservice': {'score': 1.5, 'fault_type': 'suspicious'}, 'adservice': {'score': 1.1666666666666665, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:06:59,382 main.py:47: productcatalogservice, {'score': 4.0, 'fault_type': 'change'}, rank is 1
+[INFO]2023-09-26 03:06:59,383 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:59,383 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:59,383 ranker.py:64: 2023-09-23_8.json, 2023-09-23 09:26:23, rca: productcatalogservice, label: productcatalogservice
+[INFO]2023-09-26 03:06:59,437 ranker.py:86: gray_change_result ('productcatalogservice', 1.0, 'gray', 1, 1)
+[INFO]2023-09-26 03:06:59,437 ranker.py:93: -------------gray change fault {'productcatalogservice': {'score': 1.0, 'fault_type': 'change'}} ----------------
+[INFO]2023-09-26 03:06:59,437 main.py:43: {'productcatalogservice': {'score': 1.0, 'fault_type': 'change'}}
+[INFO]2023-09-26 03:06:59,438 main.py:47: productcatalogservice, {'score': 1.0, 'fault_type': 'change'}, rank is 1
+[INFO]2023-09-26 03:06:59,438 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:59,438 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:59,438 ranker.py:64: 2023-09-23_20.json, 2023-09-23 21:53:23, rca: checkoutservice, label: productcatalogservice
+[INFO]2023-09-26 03:06:59,438 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:06:59,438 ranker.py:361: {'productcatalogservice': 0.6666666666666666, 'shippingservice': 0.6666666666666666, 'currencyservice': 0.6666666666666666}
+[INFO]2023-09-26 03:06:59,438 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:06:59,439 ranker.py:419: {'productcatalogservice': 0.8333333333333334, 'shippingservice': 1.0, 'currencyservice': 0.8333333333333334}
+[INFO]2023-09-26 03:06:59,464 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:06:59,465 difference.py:487: {'shippingservice': (0.0, 'gray', 0, 1), 'productcatalogservice': (0.0, 'gray', 0, 1), 'currencyservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:06:59,491 ranker.py:215: difference_score: {'shippingservice': (0.0, 'gray', 0, 1), 'productcatalogservice': (0.0, 'gray', 0, 1), 'currencyservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:06:59,491 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:06:59,491 ranker.py:131: 2023-09-23_20.json, 2023-09-23 21:53:23, rca: checkoutservice, label: productcatalogservice
+[INFO]2023-09-26 03:06:59,492 main.py:43: {'shippingservice': {'score': 1.6666666666666665, 'fault_type': 'suspicious'}, 'currencyservice': {'score': 1.5, 'fault_type': 'suspicious'}, 'productcatalogservice': {'score': 1.5, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:06:59,492 main.py:47: productcatalogservice, {'score': 1.5, 'fault_type': 'suspicious'}, rank is 3
+[INFO]2023-09-26 03:06:59,492 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:59,492 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:59,492 ranker.py:64: 2023-09-24_12.json, 2023-09-24 14:20:00, rca: checkoutservice, label: productcatalogservice
+[INFO]2023-09-26 03:06:59,493 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:06:59,493 ranker.py:361: {'productcatalogservice': 0.6666666666666666, 'emailservice': 0.6666666666666666, 'checkoutservice': 1.0, 'adservice': 0.5}
+[INFO]2023-09-26 03:06:59,493 ranker.py:381: time score: checkoutservice, 0
+[INFO]2023-09-26 03:06:59,493 ranker.py:381: time score: adservice, 0
+[INFO]2023-09-26 03:06:59,493 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:06:59,493 ranker.py:419: {'productcatalogservice': 0.6666666666666666, 'emailservice': 1.0, 'checkoutservice': 0, 'adservice': 0}
+[ERROR]2023-09-26 03:06:59,503 difference.py:817: checkoutservice host list change is 0
+[ERROR]2023-09-26 03:06:59,503 difference.py:817: adservice host list change is 0
+[INFO]2023-09-26 03:06:59,521 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:06:59,521 difference.py:487: {'productcatalogservice': (0.0, 'gray', 0, 2), 'emailservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:06:59,555 ranker.py:215: difference_score: {'productcatalogservice': (0.0, 'gray', 0, 2), 'emailservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:06:59,555 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:06:59,555 ranker.py:131: 2023-09-24_12.json, 2023-09-24 14:20:00, rca: checkoutservice, label: productcatalogservice
+[INFO]2023-09-26 03:06:59,556 main.py:43: {'emailservice': {'score': 1.6666666666666665, 'fault_type': 'suspicious'}, 'productcatalogservice': {'score': 1.3333333333333333, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:06:59,556 main.py:47: productcatalogservice, {'score': 1.3333333333333333, 'fault_type': 'suspicious'}, rank is 2
+[INFO]2023-09-26 03:06:59,556 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:59,556 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:59,556 ranker.py:64: 2023-09-24_10.json, 2023-09-24 12:20:00, rca: checkoutservice, label: currencyservice
+[INFO]2023-09-26 03:06:59,557 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:06:59,557 ranker.py:361: {'currencyservice': 0.6666666666666666, 'emailservice': 0.6666666666666666, 'paymentservice': 0.6666666666666666, 'adservice': 0.5, 'cartservice': 0.6666666666666666}
+[INFO]2023-09-26 03:06:59,557 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:06:59,557 ranker.py:419: {'currencyservice': 0.8333333333333334, 'emailservice': 1.0, 'paymentservice': 0.8333333333333334, 'adservice': 0.6666666666666666, 'cartservice': 0.6666666666666666}
+[INFO]2023-09-26 03:06:59,622 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:06:59,622 difference.py:487: {'paymentservice': (0.0, 'gray', 0, 1), 'emailservice': (0.0, 'gray', 0, 1), 'adservice': (0.0, 'gray', 0, 2), 'cartservice': (0.0, 'gray', 0, 1), 'currencyservice': (1.0, 'gray', 1, 1)}
+[INFO]2023-09-26 03:06:59,657 ranker.py:215: difference_score: {'paymentservice': (0.0, 'gray', 0, 1), 'emailservice': (0.0, 'gray', 0, 1), 'adservice': (0.0, 'gray', 0, 2), 'cartservice': (0.0, 'gray', 0, 1), 'currencyservice': (1.0, 'gray', 1, 1)}
+[INFO]2023-09-26 03:06:59,657 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:06:59,657 ranker.py:131: 2023-09-24_10.json, 2023-09-24 12:20:00, rca: checkoutservice, label: currencyservice
+[INFO]2023-09-26 03:06:59,658 main.py:43: {'currencyservice': {'score': 4.0, 'fault_type': 'change'}, 'emailservice': {'score': 1.6666666666666665, 'fault_type': 'suspicious'}, 'paymentservice': {'score': 1.5, 'fault_type': 'suspicious'}, 'cartservice': {'score': 1.3333333333333333, 'fault_type': 'suspicious'}, 'adservice': {'score': 1.1666666666666665, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:06:59,658 main.py:47: currencyservice, {'score': 4.0, 'fault_type': 'change'}, rank is 1
+[INFO]2023-09-26 03:06:59,658 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:59,658 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:59,658 ranker.py:64: 2023-09-24_3.json, 2023-09-24 06:30:00, rca: adservice, label: adservice
+[INFO]2023-09-26 03:06:59,708 ranker.py:86: gray_change_result ('adservice', 1.0, 'gray', 2, 2)
+[INFO]2023-09-26 03:06:59,709 ranker.py:93: -------------gray change fault {'adservice': {'score': 1.0, 'fault_type': 'change'}} ----------------
+[INFO]2023-09-26 03:06:59,709 main.py:43: {'adservice': {'score': 1.0, 'fault_type': 'change'}}
+[INFO]2023-09-26 03:06:59,709 main.py:47: adservice, {'score': 1.0, 'fault_type': 'change'}, rank is 1
+[INFO]2023-09-26 03:06:59,709 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:59,709 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:59,709 ranker.py:64: 2023-09-24_5.json, 2023-09-24 08:16:00, rca: adservice, label: adservice
+[INFO]2023-09-26 03:06:59,758 ranker.py:86: gray_change_result ('adservice', 1.0, 'gray', 1, 1)
+[INFO]2023-09-26 03:06:59,758 ranker.py:93: -------------gray change fault {'adservice': {'score': 1.0, 'fault_type': 'change'}} ----------------
+[INFO]2023-09-26 03:06:59,759 main.py:43: {'adservice': {'score': 1.0, 'fault_type': 'change'}}
+[INFO]2023-09-26 03:06:59,759 main.py:47: adservice, {'score': 1.0, 'fault_type': 'change'}, rank is 1
+[INFO]2023-09-26 03:06:59,759 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:59,759 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:59,759 ranker.py:64: 2023-09-24_8.json, 2023-09-24 10:14:00, rca: frontend, label: cartservice
+[INFO]2023-09-26 03:06:59,760 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:06:59,760 ranker.py:361: {'cartservice': 0.6666666666666666, 'recommendationservice': 0.6666666666666666, 'shippingservice': 0.6666666666666666, 'currencyservice': 0.6666666666666666, 'productcatalogservice': 0.6666666666666666}
+[INFO]2023-09-26 03:06:59,760 ranker.py:381: time score: recommendationservice, 0
+[INFO]2023-09-26 03:06:59,760 ranker.py:381: time score: shippingservice, 0
+[INFO]2023-09-26 03:06:59,760 ranker.py:381: time score: currencyservice, 0
+[INFO]2023-09-26 03:06:59,760 ranker.py:381: time score: productcatalogservice, 0
+[INFO]2023-09-26 03:06:59,760 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:06:59,760 ranker.py:419: {'cartservice': 1.0, 'recommendationservice': 0, 'shippingservice': 0, 'currencyservice': 0, 'productcatalogservice': 0}
+[ERROR]2023-09-26 03:06:59,769 difference.py:817: recommendationservice host list change is 0
+[ERROR]2023-09-26 03:06:59,769 difference.py:817: shippingservice host list change is 0
+[ERROR]2023-09-26 03:06:59,770 difference.py:817: productcatalogservice host list change is 0
+[ERROR]2023-09-26 03:06:59,770 difference.py:817: currencyservice host list change is 0
+[INFO]2023-09-26 03:06:59,785 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:06:59,785 difference.py:487: {'cartservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:06:59,819 ranker.py:215: difference_score: {'cartservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:06:59,819 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:06:59,819 ranker.py:131: 2023-09-24_8.json, 2023-09-24 10:14:00, rca: frontend, label: cartservice
+[INFO]2023-09-26 03:06:59,819 main.py:43: {'cartservice': {'score': 1.6666666666666665, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:06:59,819 main.py:47: cartservice, {'score': 1.6666666666666665, 'fault_type': 'suspicious'}, rank is 1
+[INFO]2023-09-26 03:06:59,819 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:59,819 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:59,820 ranker.py:64: 2023-09-24_17.json, 2023-09-24 17:52:00, rca: frontend, label: checkoutservice
+[INFO]2023-09-26 03:06:59,820 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:06:59,820 ranker.py:361: {'checkoutservice': 0.6666666666666666, 'shippingservice': 0.6666666666666666, 'paymentservice': 0.5}
+[INFO]2023-09-26 03:06:59,820 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:06:59,820 ranker.py:419: {'checkoutservice': 0.6666666666666666, 'shippingservice': 0.6666666666666666, 'paymentservice': 0.6666666666666666}
+[INFO]2023-09-26 03:06:59,887 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:06:59,887 difference.py:487: {'paymentservice': (0.0, 'gray', 0, 1), 'shippingservice': (0.0, 'gray', 0, 1), 'checkoutservice': (1.0, 'gray', 1, 1)}
+[INFO]2023-09-26 03:06:59,912 ranker.py:215: difference_score: {'paymentservice': (0.0, 'gray', 0, 1), 'shippingservice': (0.0, 'gray', 0, 1), 'checkoutservice': (1.0, 'gray', 1, 1)}
+[INFO]2023-09-26 03:06:59,913 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:06:59,913 ranker.py:131: 2023-09-24_17.json, 2023-09-24 17:52:00, rca: frontend, label: checkoutservice
+[INFO]2023-09-26 03:06:59,913 main.py:43: {'checkoutservice': {'score': 4.0, 'fault_type': 'change'}, 'shippingservice': {'score': 1.3333333333333333, 'fault_type': 'suspicious'}, 'paymentservice': {'score': 1.1666666666666665, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:06:59,913 main.py:47: checkoutservice, {'score': 4.0, 'fault_type': 'change'}, rank is 1
+[INFO]2023-09-26 03:06:59,913 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:59,913 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:59,913 ranker.py:64: 2023-09-24_14.json, 2023-09-24 15:47:00, rca: productcatalogservice, label: productcatalogservice
+[INFO]2023-09-26 03:06:59,963 ranker.py:86: gray_change_result ('productcatalogservice', 1.0, 'gray', 2, 2)
+[INFO]2023-09-26 03:06:59,964 ranker.py:93: -------------gray change fault {'productcatalogservice': {'score': 1.0, 'fault_type': 'change'}} ----------------
+[INFO]2023-09-26 03:06:59,964 main.py:43: {'productcatalogservice': {'score': 1.0, 'fault_type': 'change'}}
+[INFO]2023-09-26 03:06:59,964 main.py:47: productcatalogservice, {'score': 1.0, 'fault_type': 'change'}, rank is 1
+[INFO]2023-09-26 03:06:59,964 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:06:59,964 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:06:59,964 ranker.py:64: 2023-09-24_7.json, 2023-09-24 09:38:00, rca: adservice, label: adservice
+[INFO]2023-09-26 03:07:00,015 ranker.py:86: gray_change_result ('adservice', 1.0, 'gray', 1, 1)
+[INFO]2023-09-26 03:07:00,015 ranker.py:93: -------------gray change fault {'adservice': {'score': 1.0, 'fault_type': 'change'}} ----------------
+[INFO]2023-09-26 03:07:00,015 main.py:43: {'adservice': {'score': 1.0, 'fault_type': 'change'}}
+[INFO]2023-09-26 03:07:00,016 main.py:47: adservice, {'score': 1.0, 'fault_type': 'change'}, rank is 1
+[INFO]2023-09-26 03:07:00,016 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:07:00,016 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:07:00,016 ranker.py:64: 2023-09-24_4.json, 2023-09-24 07:16:00, rca: adservice, label: adservice
+[INFO]2023-09-26 03:07:00,069 ranker.py:86: gray_change_result ('adservice', 1.0, 'gray', 2, 2)
+[INFO]2023-09-26 03:07:00,069 ranker.py:93: -------------gray change fault {'adservice': {'score': 1.0, 'fault_type': 'change'}} ----------------
+[INFO]2023-09-26 03:07:00,069 main.py:43: {'adservice': {'score': 1.0, 'fault_type': 'change'}}
+[INFO]2023-09-26 03:07:00,070 main.py:47: adservice, {'score': 1.0, 'fault_type': 'change'}, rank is 1
+[INFO]2023-09-26 03:07:00,070 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:07:00,070 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:07:00,070 ranker.py:64: 2023-09-24_16.json, 2023-09-24 17:07:01, rca: frontend, label: checkoutservice
+[INFO]2023-09-26 03:07:00,070 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:07:00,070 ranker.py:361: {'checkoutservice': 0.6666666666666666, 'currencyservice': 0.6666666666666666, 'shippingservice': 0.6666666666666666}
+[INFO]2023-09-26 03:07:00,070 ranker.py:381: time score: currencyservice, 0
+[INFO]2023-09-26 03:07:00,070 ranker.py:381: time score: shippingservice, 0
+[INFO]2023-09-26 03:07:00,070 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:07:00,070 ranker.py:419: {'checkoutservice': 1.0, 'currencyservice': 0, 'shippingservice': 0}
+[ERROR]2023-09-26 03:07:00,081 difference.py:817: currencyservice host list change is 0
+[ERROR]2023-09-26 03:07:00,081 difference.py:817: shippingservice host list change is 0
+[INFO]2023-09-26 03:07:00,134 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:07:00,134 difference.py:487: {'checkoutservice': (1.0, 'gray', 1, 1)}
+[INFO]2023-09-26 03:07:00,167 ranker.py:215: difference_score: {'checkoutservice': (1.0, 'gray', 1, 1)}
+[INFO]2023-09-26 03:07:00,167 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:07:00,167 ranker.py:131: 2023-09-24_16.json, 2023-09-24 17:07:01, rca: frontend, label: checkoutservice
+[INFO]2023-09-26 03:07:00,168 main.py:43: {'checkoutservice': {'score': 4.0, 'fault_type': 'change'}}
+[INFO]2023-09-26 03:07:00,168 main.py:47: checkoutservice, {'score': 4.0, 'fault_type': 'change'}, rank is 1
+[INFO]2023-09-26 03:07:00,168 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:07:00,168 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:07:00,168 ranker.py:64: 2023-09-24_11.json, 2023-09-24 13:39:00, rca: emailservice, label: emailservice
+[INFO]2023-09-26 03:07:00,194 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:07:00,194 ranker.py:361: {'emailservice': 1.0, 'checkoutservice': 0.6666666666666666, 'paymentservice': 0.5, 'cartservice': 0.5}
+[INFO]2023-09-26 03:07:00,194 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:07:00,194 ranker.py:419: {'emailservice': 0.8333333333333334, 'checkoutservice': 0.6666666666666666, 'paymentservice': 0.8333333333333334, 'cartservice': 1.0}
+[INFO]2023-09-26 03:07:00,226 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:07:00,226 difference.py:487: {'emailservice': (0.0, 'gray', 0, 1), 'checkoutservice': (0.0, 'gray', 0, 1), 'paymentservice': (0.0, 'gray', 0, 1), 'cartservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:07:00,252 ranker.py:215: difference_score: {'emailservice': (0.0, 'gray', 0, 1), 'checkoutservice': (0.0, 'gray', 0, 1), 'paymentservice': (0.0, 'gray', 0, 1), 'cartservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:07:00,253 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:07:00,253 ranker.py:131: 2023-09-24_11.json, 2023-09-24 13:39:00, rca: emailservice, label: emailservice
+[INFO]2023-09-26 03:07:00,253 main.py:43: {'emailservice': {'score': 1.8333333333333335, 'fault_type': 'suspicious'}, 'cartservice': {'score': 1.5, 'fault_type': 'suspicious'}, 'paymentservice': {'score': 1.3333333333333335, 'fault_type': 'suspicious'}, 'checkoutservice': {'score': 1.3333333333333333, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:07:00,253 main.py:47: emailservice, {'score': 1.8333333333333335, 'fault_type': 'suspicious'}, rank is 1
+[INFO]2023-09-26 03:07:00,253 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:07:00,253 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:07:00,253 ranker.py:64: 2023-09-24_9.json, 2023-09-24 11:00:00, rca: currencyservice, label: cartservice
+[INFO]2023-09-26 03:07:00,254 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:07:00,254 ranker.py:361: {'cartservice': 0.5, 'paymentservice': 0.5, 'productcatalogservice': 0.5}
+[INFO]2023-09-26 03:07:00,254 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:07:00,254 ranker.py:419: {'cartservice': 0.8333333333333334, 'paymentservice': 0.6666666666666666, 'productcatalogservice': 0.6666666666666666}
+[INFO]2023-09-26 03:07:00,286 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:07:00,286 difference.py:487: {'productcatalogservice': (0.0, 'gray', 0, 1), 'paymentservice': (0.0, 'gray', 0, 1), 'cartservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:07:00,313 ranker.py:215: difference_score: {'productcatalogservice': (0.0, 'gray', 0, 1), 'paymentservice': (0.0, 'gray', 0, 1), 'cartservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:07:00,313 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:07:00,313 ranker.py:131: 2023-09-24_9.json, 2023-09-24 11:00:00, rca: currencyservice, label: cartservice
+[INFO]2023-09-26 03:07:00,314 main.py:43: {'cartservice': {'score': 1.3333333333333335, 'fault_type': 'suspicious'}, 'paymentservice': {'score': 1.1666666666666665, 'fault_type': 'suspicious'}, 'productcatalogservice': {'score': 1.1666666666666665, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:07:00,314 main.py:47: cartservice, {'score': 1.3333333333333335, 'fault_type': 'suspicious'}, rank is 1
+[INFO]2023-09-26 03:07:00,314 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:07:00,314 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:07:00,314 ranker.py:64: 2023-09-24_2.json, 2023-09-24 05:02:00, rca: frontend, label: checkoutservice
+[INFO]2023-09-26 03:07:00,314 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:07:00,314 ranker.py:361: {'checkoutservice': 0.6666666666666666}
+[INFO]2023-09-26 03:07:00,314 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:07:00,315 ranker.py:419: {'checkoutservice': 0.6666666666666666}
+[INFO]2023-09-26 03:07:00,340 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:07:00,340 difference.py:487: {'checkoutservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:07:00,364 ranker.py:215: difference_score: {'checkoutservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:07:00,364 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:07:00,364 ranker.py:131: 2023-09-24_2.json, 2023-09-24 05:02:00, rca: frontend, label: checkoutservice
+[INFO]2023-09-26 03:07:00,365 main.py:43: {'checkoutservice': {'score': 1.3333333333333333, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:07:00,365 main.py:47: checkoutservice, {'score': 1.3333333333333333, 'fault_type': 'suspicious'}, rank is 1
+[INFO]2023-09-26 03:07:00,365 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:07:00,365 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:07:00,365 ranker.py:64: 2023-09-24_6.json, 2023-09-24 08:57:00, rca: adservice, label: adservice
+[INFO]2023-09-26 03:07:00,414 ranker.py:86: gray_change_result ('adservice', 1.0, 'gray', 1, 1)
+[INFO]2023-09-26 03:07:00,414 ranker.py:93: -------------gray change fault {'adservice': {'score': 1.0, 'fault_type': 'change'}} ----------------
+[INFO]2023-09-26 03:07:00,414 main.py:43: {'adservice': {'score': 1.0, 'fault_type': 'change'}}
+[INFO]2023-09-26 03:07:00,415 main.py:47: adservice, {'score': 1.0, 'fault_type': 'change'}, rank is 1
+[INFO]2023-09-26 03:07:00,415 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:07:00,415 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:07:00,415 ranker.py:64: 2023-09-24_15.json, 2023-09-24 16:34:00, rca: recommendationservice, label: recommendationservice
+[INFO]2023-09-26 03:07:00,443 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:07:00,443 ranker.py:361: {'recommendationservice': 1.0, 'adservice': 0.5, 'cartservice': 0.5, 'shippingservice': 0.5}
+[INFO]2023-09-26 03:07:00,443 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:07:00,444 ranker.py:419: {'recommendationservice': 1.0, 'adservice': 0.8333333333333334, 'cartservice': 0.8333333333333334, 'shippingservice': 1.0}
+[INFO]2023-09-26 03:07:00,472 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:07:00,473 difference.py:487: {'cartservice': (0.0, 'gray', 0, 2), 'shippingservice': (0.0, 'gray', 0, 2), 'recommendationservice': (0.0, 'gray', 0, 4), 'adservice': (0.0, 'gray', 0, 3)}
+[INFO]2023-09-26 03:07:00,503 ranker.py:215: difference_score: {'cartservice': (0.0, 'gray', 0, 2), 'shippingservice': (0.0, 'gray', 0, 2), 'recommendationservice': (0.0, 'gray', 0, 4), 'adservice': (0.0, 'gray', 0, 3)}
+[INFO]2023-09-26 03:07:00,503 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:07:00,503 ranker.py:131: 2023-09-24_15.json, 2023-09-24 16:34:00, rca: recommendationservice, label: recommendationservice
+[INFO]2023-09-26 03:07:00,504 main.py:43: {'recommendationservice': {'score': 2.0, 'fault_type': 'suspicious'}, 'shippingservice': {'score': 1.5, 'fault_type': 'suspicious'}, 'adservice': {'score': 1.3333333333333335, 'fault_type': 'suspicious'}, 'cartservice': {'score': 1.3333333333333335, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:07:00,504 main.py:47: recommendationservice, {'score': 2.0, 'fault_type': 'suspicious'}, rank is 1
+[INFO]2023-09-26 03:07:00,504 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:07:00,504 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:07:00,504 ranker.py:64: 2023-09-24_13.json, 2023-09-24 15:04:00, rca: productcatalogservice, label: productcatalogservice
+[INFO]2023-09-26 03:07:00,559 ranker.py:86: gray_change_result ('productcatalogservice', 1.0, 'gray', 2, 2)
+[INFO]2023-09-26 03:07:00,559 ranker.py:93: -------------gray change fault {'productcatalogservice': {'score': 1.0, 'fault_type': 'change'}} ----------------
+[INFO]2023-09-26 03:07:00,559 main.py:43: {'productcatalogservice': {'score': 1.0, 'fault_type': 'change'}}
+[INFO]2023-09-26 03:07:00,559 main.py:47: productcatalogservice, {'score': 1.0, 'fault_type': 'change'}, rank is 1
+[INFO]2023-09-26 03:07:00,560 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:07:00,560 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:07:00,560 ranker.py:64: 2023-09-24_1.json, 2023-09-24 03:17:00, rca: frontend, label: checkoutservice
+[INFO]2023-09-26 03:07:00,560 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:07:00,560 ranker.py:361: {'checkoutservice': 0.6666666666666666}
+[INFO]2023-09-26 03:07:00,560 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:07:00,560 ranker.py:419: {'checkoutservice': 0.8333333333333334}
+[INFO]2023-09-26 03:07:00,585 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:07:00,585 difference.py:487: {'checkoutservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:07:00,611 ranker.py:215: difference_score: {'checkoutservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:07:00,612 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:07:00,612 ranker.py:131: 2023-09-24_1.json, 2023-09-24 03:17:00, rca: frontend, label: checkoutservice
+[INFO]2023-09-26 03:07:00,612 main.py:43: {'checkoutservice': {'score': 1.5, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:07:00,612 main.py:47: checkoutservice, {'score': 1.5, 'fault_type': 'suspicious'}, rank is 1
+[INFO]2023-09-26 03:07:00,612 ranker.py:61: -------------------------------------------------------
+[INFO]2023-09-26 03:07:00,612 ranker.py:62: ---------------------Case Information------------------
+[INFO]2023-09-26 03:07:00,612 ranker.py:64: 2023-09-24_18.json, 2023-09-24 18:32:01, rca: frontend, label: checkoutservice
+[INFO]2023-09-26 03:07:00,613 ranker.py:360: -------------------deep score------------------
+[INFO]2023-09-26 03:07:00,613 ranker.py:361: {'checkoutservice': 0.6666666666666666}
+[INFO]2023-09-26 03:07:00,613 ranker.py:418: -------------------time score------------------
+[INFO]2023-09-26 03:07:00,613 ranker.py:419: {'checkoutservice': 0.5}
+[INFO]2023-09-26 03:07:00,639 difference.py:486: -------------------change difference score------------------
+[INFO]2023-09-26 03:07:00,639 difference.py:487: {'checkoutservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:07:00,666 ranker.py:215: difference_score: {'checkoutservice': (0.0, 'gray', 0, 1)}
+[INFO]2023-09-26 03:07:00,666 ranker.py:129: -------------------final score------------------
+[INFO]2023-09-26 03:07:00,666 ranker.py:131: 2023-09-24_18.json, 2023-09-24 18:32:01, rca: frontend, label: checkoutservice
+[INFO]2023-09-26 03:07:00,667 main.py:43: {'checkoutservice': {'score': 1.1666666666666665, 'fault_type': 'suspicious'}}
+[INFO]2023-09-26 03:07:00,667 main.py:47: checkoutservice, {'score': 1.1666666666666665, 'fault_type': 'suspicious'}, rank is 1
+[INFO]2023-09-26 03:07:00,667 main.py:78: case_number:51
+[INFO]2023-09-26 03:07:00,667 main.py:81: -------------------Change Task Top1 score------------------
+[INFO]2023-09-26 03:07:00,667 main.py:83: HR@1:0.8823529411764706
+[INFO]2023-09-26 03:07:00,667 main.py:86: -------------------Change Task Top3 score------------------
+[INFO]2023-09-26 03:07:00,667 main.py:88: HR@3:1.0
+[INFO]2023-09-26 03:07:00,667 main.py:91: -------------------Change Task Top5 score------------------
+[INFO]2023-09-26 03:07:00,667 main.py:93: HR@5:1.0
+[INFO]2023-09-26 03:07:00,667 main.py:96: -------------------Change Task MAR Result------------------
+[INFO]2023-09-26 03:07:00,667 main.py:97: 1.1372549019607843
