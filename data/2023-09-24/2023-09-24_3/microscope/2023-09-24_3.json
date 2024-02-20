@@ -1,0 +1,249 @@
+{
+    "plan": {
+        "adservice": {
+            "release_time": 1695536982,
+            "target_replica": 5,
+            "process": {
+                "1695536982": {
+                    "v1": 3,
+                    "v2": 2,
+                    "release_pod": [
+                        "adservice-v2-fd6989b7c-dt7tp",
+                        "adservice-v2-fd6989b7c-hjql2"
+                    ],
+                    "delete_pod": [
+                        "adservice-v1-59dcc9f97-bb29f",
+                        "adservice-v1-59dcc9f97-vtl4v"
+                    ],
+                    "release_complete_time": "2023-09-24 06:30:47",
+                    "release_complete_timestamp": 1695537047
+                },
+                "1695537959": {
+                    "v1": 1,
+                    "v2": 4,
+                    "release_pod": [
+                        "adservice-v2-fd6989b7c-hx9f6",
+                        "adservice-v2-fd6989b7c-js9l8"
+                    ],
+                    "delete_pod": [
+                        "adservice-v1-59dcc9f97-nxmwq",
+                        "adservice-v1-59dcc9f97-rcgmb"
+                    ],
+                    "release_complete_time": "2023-09-24 06:46:54",
+                    "release_complete_timestamp": 1695538014
+                },
+                "1695537450": {
+                    "v1": 0,
+                    "v2": 5,
+                    "release_pod": [
+                        "adservice-v2-fd6989b7c-5ltjc"
+                    ],
+                    "delete_pod": [
+                        "adservice-v1-59dcc9f97-zd7nt"
+                    ],
+                    "release_complete_time": "2023-09-24 06:47:49",
+                    "release_complete_timestamp": 1695538069
+                }
+            },
+            "fault": null
+        },
+        "cartservice": {
+            "release_time": 1695536976,
+            "target_replica": 3,
+            "process": {
+                "1695536976": {
+                    "v1": 2,
+                    "v2": 1,
+                    "release_pod": [
+                        "cartservice-v2-69b7767d-5tpzc"
+                    ],
+                    "delete_pod": [
+                        "cartservice-v1-685f9dd56f-dxddd"
+                    ],
+                    "release_complete_time": "2023-09-24 06:30:41",
+                    "release_complete_timestamp": 1695537041
+                },
+                "1695538001": {
+                    "v1": 1,
+                    "v2": 2,
+                    "release_pod": [
+                        "cartservice-v2-69b7767d-dsmw2"
+                    ],
+                    "delete_pod": [
+                        "cartservice-v1-685f9dd56f-rfwgz"
+                    ],
+                    "release_complete_time": "2023-09-24 06:47:36",
+                    "release_complete_timestamp": 1695538056
+                },
+                "1695537392": {
+                    "v1": 0,
+                    "v2": 3,
+                    "release_pod": [
+                        "cartservice-v2-69b7767d-vs4tf"
+                    ],
+                    "delete_pod": [
+                        "cartservice-v1-685f9dd56f-spqcb"
+                    ],
+                    "release_complete_time": "2023-09-24 06:48:31",
+                    "release_complete_timestamp": 1695538111
+                }
+            },
+            "fault": null
+        },
+        "emailservice": {
+            "release_time": 1695536971,
+            "target_replica": 3,
+            "process": {
+                "1695536971": {
+                    "v1": 2,
+                    "v2": 1,
+                    "release_pod": [
+                        "emailservice-v2-56777855c6-cwlj9"
+                    ],
+                    "delete_pod": [
+                        "emailservice-v1-74655757-vpk85"
+                    ],
+                    "release_complete_time": "2023-09-24 06:30:36",
+                    "release_complete_timestamp": 1695537036
+                },
+                "1695537974": {
+                    "v1": 1,
+                    "v2": 2,
+                    "release_pod": [
+                        "emailservice-v2-56777855c6-wpq96"
+                    ],
+                    "delete_pod": [
+                        "emailservice-v1-74655757-5q9sh"
+                    ],
+                    "release_complete_time": "2023-09-24 06:47:22",
+                    "release_complete_timestamp": 1695538042
+                },
+                "1695537348": {
+                    "v1": 0,
+                    "v2": 3,
+                    "release_pod": [
+                        "emailservice-v2-56777855c6-g66p6"
+                    ],
+                    "delete_pod": [
+                        "emailservice-v1-74655757-ltdmj"
+                    ],
+                    "release_complete_time": "2023-09-24 06:48:18",
+                    "release_complete_timestamp": 1695538098
+                }
+            },
+            "fault": null
+        },
+        "recommendationservice": {
+            "release_time": 1695537217,
+            "target_replica": 5,
+            "process": {
+                "1695537217": {
+                    "v1": 3,
+                    "v2": 2,
+                    "release_pod": [
+                        "recommendationservice-v2-b97f4d764-rvrt4",
+                        "recommendationservice-v2-b97f4d764-x228w"
+                    ],
+                    "delete_pod": [
+                        "recommendationservice-v1-5b769cd779-gf5z4",
+                        "recommendationservice-v1-5b769cd779-lv8ck"
+                    ],
+                    "release_complete_time": "2023-09-24 06:34:42",
+                    "release_complete_timestamp": 1695537282
+                },
+                "1695538217": {
+                    "v1": 1,
+                    "v2": 4,
+                    "release_pod": [
+                        "recommendationservice-v2-b97f4d764-f67pf",
+                        "recommendationservice-v2-b97f4d764-r8wn4"
+                    ],
+                    "delete_pod": [
+                        "recommendationservice-v1-5b769cd779-6lqdg",
+                        "recommendationservice-v1-5b769cd779-pbsbg"
+                    ],
+                    "release_complete_time": "2023-09-24 06:51:12",
+                    "release_complete_timestamp": 1695538272
+                },
+                "1695537580": {
+                    "v1": 0,
+                    "v2": 5,
+                    "release_pod": [
+                        "recommendationservice-v2-b97f4d764-6c956"
+                    ],
+                    "delete_pod": [
+                        "recommendationservice-v1-5b769cd779-hl88n"
+                    ],
+                    "release_complete_time": "2023-09-24 06:52:07",
+                    "release_complete_timestamp": 1695538327
+                }
+            },
+            "fault": null
+        }
+    },
+    "fault": "exception",
+    "fault_release_service": "adservice",
+    "normal_service_list": [
+        "cartservice",
+        "emailservice",
+        "recommendationservice"
+    ],
+    "experiment_time": "2023-09-24 06:14:20",
+    "before_change_list": [
+        "adservice-v1-59dcc9f97-bb29f",
+        "adservice-v1-59dcc9f97-nxmwq",
+        "adservice-v1-59dcc9f97-rcgmb",
+        "adservice-v1-59dcc9f97-vtl4v",
+        "adservice-v1-59dcc9f97-zd7nt",
+        "cartservice-v1-685f9dd56f-dxddd",
+        "cartservice-v1-685f9dd56f-rfwgz",
+        "cartservice-v1-685f9dd56f-spqcb",
+        "checkoutservice-v1-857f69df7f-kgh2t",
+        "checkoutservice-v1-857f69df7f-p26kf",
+        "checkoutservice-v1-857f69df7f-vvhhw",
+        "currencyservice-v1-57684b474b-9kp6p",
+        "currencyservice-v1-57684b474b-m8twf",
+        "currencyservice-v1-57684b474b-vn6ts",
+        "emailservice-v1-74655757-5q9sh",
+        "emailservice-v1-74655757-ltdmj",
+        "emailservice-v1-74655757-vpk85",
+        "frontend-v1-684ff8b787-b7jp7",
+        "loadgenerator-75f659cdb5-6srrh",
+        "loadgenerator-75f659cdb5-c5sz4",
+        "loadgenerator-75f659cdb5-npmsk",
+        "paymentservice-v1-65d5f78d47-6tw8x",
+        "paymentservice-v1-65d5f78d47-hrtqb",
+        "paymentservice-v1-65d5f78d47-r9kwh",
+        "productcatalogservice-v1-7bb89585b4-d8qw4",
+        "productcatalogservice-v1-7bb89585b4-fz8fl",
+        "productcatalogservice-v1-7bb89585b4-gcppf",
+        "productcatalogservice-v1-7bb89585b4-v957m",
+        "productcatalogservice-v1-7bb89585b4-wbz6x",
+        "recommendationservice-v1-5b769cd779-6lqdg",
+        "recommendationservice-v1-5b769cd779-gf5z4",
+        "recommendationservice-v1-5b769cd779-hl88n",
+        "recommendationservice-v1-5b769cd779-lv8ck",
+        "recommendationservice-v1-5b769cd779-pbsbg",
+        "shippingservice-v1-85764c6c94-8shd5",
+        "shippingservice-v1-85764c6c94-n5tpz",
+        "shippingservice-v1-85764c6c94-prmv4"
+    ],
+    "experiemnt_end_time": "2023-09-24 06:52:07",
+    "detect_timestamp": 1695537000,
+    "detect_time": "2023-09-24 06:30:00",
+    "GIED_result": "adservice",
+    "Microscope_result": "frontend",
+    "Microrca_result": "adservice",
+    "spicious_set_microscope": [
+        "currencyservice",
+        "emailservice",
+        "productcatalogservice",
+        "shippingservice",
+        "recommendationservice",
+        "paymentservice",
+        "adservice",
+        "checkoutservice",
+        "cartservice",
+        "frontend"
+    ]
+}

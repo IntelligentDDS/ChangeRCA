@@ -1,0 +1,2 @@
+Time,Timestamp,SuccessRate,Latency,CPUUsageRate(%),MemoryUsageRate(%),NodeCpuUsageRate(%),NodeMemoryUsageRate(%)
+2023-09-24 18:10:00.919099119 +0000 UTC m=+146317.887173356,1695579000,100,0,0,6.624273561853777,18.396281302714986,0.235

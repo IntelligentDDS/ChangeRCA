@@ -9,35 +9,35 @@ if __name__ == '__main__':
     """
     the = 0.8
     p_the = 0.05
-    
+
     top_module_list = []
     top_taskid_list = []
 
-
     rca = "gied"
-    
-    # "/mnt/multidata/2023-09-21/change", 
-    base_path_list = ["/mnt/multidata/2023-09-22/change", "/mnt/multidata/2023-09-23/change", "/mnt/multidata/2023-09-24/change"]
+
+    # "/mnt/multidata/2023-09-21/change",
+    base_path_list = ["./data/2023-09-22",
+                      "./data/2023-09-23", "./data/2023-09-24"]
 
     # base_path_list = ["/mnt/multidata/2023-09-24/change"]
-    case_number = 0 
+    case_number = 0
     for base_path in base_path_list:
         # base_path = "/mnt/multidata/2023-09-21/change"
         case_path_list = os.listdir(base_path)
-        
+
         for case_path in case_path_list:
             case_number = case_number + 1
             case_name = case_path + ".json"
             case_file = os.path.join(base_path, case_path)
             ranker = Ranker(case_file, case_name, rca, the, p_the)
-            score = ranker.root_cause_change_identifycation() 
+            score = ranker.root_cause_change_identifycation()
             # score = ranker.root_cause_change_identifycation_wodep()
 
-            rank_base_path = os.path.join(case_file, rca)       
+            rank_base_path = os.path.join(case_file, rca)
             rank_case_file = os.path.join(rank_base_path, case_name)
 
-            with open(rank_case_file , 'r') as file:
-                data  = json.load(file)
+            with open(rank_case_file, 'r') as file:
+                data = json.load(file)
 
             logger.info(score)
             keys = list(score.keys())
@@ -47,7 +47,7 @@ if __name__ == '__main__':
 
             k = 0
             flag = True
-            for module in score:         
+            for module in score:
                 k = k + 1
 
                 if module == data["fault_release_service"] and len(score[module]) > 0:
@@ -56,7 +56,7 @@ if __name__ == '__main__':
                         k = 10
                     top_taskid_list.append(k)
                     flag = False
-                    break 
+                    break
             if flag:
                 top_taskid_list.append(10)
 
@@ -74,7 +74,7 @@ if __name__ == '__main__':
             top1 += 1
         all_num += item
 
-    logger.info("case_number:%s, the:%s", case_number, the)    
+    logger.info("case_number:%s, the:%s", case_number, the)
 
     logger.info(
         "-------------------Change Task Top1 score------------------")
