@@ -2,27 +2,20 @@ from ranker import *
 import csv
 
 if __name__ == '__main__':
-    # p_the_list = [0.01, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5]
-    # gray_the_list = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
     """
     get the final result of ChangeRCA
     """
     the = 0.8
     p_the = 0.05
-
+    rca = "gied"
     top_module_list = []
     top_taskid_list = []
 
-    rca = "gied"
-
-    # "/mnt/multidata/2023-09-21/change",
     base_path_list = ["./data/2023-09-22",
                       "./data/2023-09-23", "./data/2023-09-24"]
 
-    # base_path_list = ["/mnt/multidata/2023-09-24/change"]
     case_number = 0
     for base_path in base_path_list:
-        # base_path = "/mnt/multidata/2023-09-21/change"
         case_path_list = os.listdir(base_path)
 
         for case_path in case_path_list:
@@ -31,7 +24,6 @@ if __name__ == '__main__':
             case_file = os.path.join(base_path, case_path)
             ranker = Ranker(case_file, case_name, rca, the, p_the)
             score = ranker.root_cause_change_identifycation()
-            # score = ranker.root_cause_change_identifycation_wodep()
 
             rank_base_path = os.path.join(case_file, rca)
             rank_case_file = os.path.join(rank_base_path, case_name)

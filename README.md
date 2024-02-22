@@ -1,10 +1,10 @@
 # ChangeRCA
 
-This repository is the basic implementation of our publication in FSE'24 conference paper ChangeRCA: Finding Root Causes from Software Changes in Large Online Systems
+This repository is the basic implementation of our publication in FSE'24 conference paper [ChangeRCA: Finding Root Causes from Software Changes in Large Online Systems](https://yuxiaoba.github.io/publication/changerca24/changerca24.pdf)
 
 ## Description
 
-`ChangeRCA` is 
+In large-scale online service systems, the occurrence of software changes is inevitable and frequent. Despite rigorous pre-deployment testing practices, the presence of defective software changes in the online environment cannot be completely eliminated. We propose a novel concept called `root cause change analysis (RCCA)` to identify the underlying root causes of change-inducing incidents. In order to apply the RCCA concept to practical scenarios, we have devised an intelligent RCCA framework named `ChangeRCA`. 
 
 ## Quick Start
 
@@ -20,7 +20,7 @@ Download `ChangeRCA` first via `git clone git@github.com:IntelligentDDS/ChangeRC
 
 Enter `ChangeRCA` content by `cd ChangeRCA` 
 
-`python -m pip install -r requirements.txt` to install the dependency for ChangeRCA
+`python3 -m pip install -r requirements.txt` to install the dependency for ChangeRCA
 
 ### Running
 ```
@@ -40,5 +40,16 @@ The results will be printed and recorded in `./log`
 
 ## Dataset 
 
+OnlineBoutique dataset is available at [./data](./data/README.md)
+
 ## Reference
+```
+@inproceedings{yu2024changerca,
+  title={ChangeRCA: Finding Root Causes from Software Changes in Large Online Systems},
+  author={Yu, Guangba and Chen, Pengfei and He, Zilong and Yan, Qiuyu and Luo, Yu and Li, Fangyuan and Zheng, Zibin},
+  booktitle={Proc. ACM Softw. Eng. 1},
+  pages={1--23},
+  year={2024}
+}     
+```
 

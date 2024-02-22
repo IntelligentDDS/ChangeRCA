@@ -38,12 +38,8 @@ def detect_outliers(normal_data, online_data, k=1.5, abnormal_number=5):
     iqr, q1, q3 = find_iqr(normal_data)
     lower_bound = q1 - k * iqr
     upper_bound = q3 + k * iqr
-    # outliers = [x for x in online_data if x < lower_bound or x > upper_bound]
     outliers = [x for x in online_data if x < lower_bound]
-    
-    # for item in outliers:
-    #     if item < 100:
-    #         outliers.remove(item)
+
     if len(outliers) < abnormal_number:
         return False
     else:
@@ -67,22 +63,22 @@ class Differentiator:
         - max_workers: number of concurrently running processes
         - rca: gied microrca, microscope
         """
-        self.base_path = base_path       
+        self.base_path = base_path
         self.file = case_file
 
-        with open(self.file , 'r') as file:
-            self.data  = json.load(file)
+        with open(self.file, 'r') as file:
+            self.data = json.load(file)
 
         self.alert_time = self.data["detect_time"]
         self.day = self.alert_time.split(" ")[0]
         self.rca = rca
-    
+
         if rca == "microscope":
             self.alert_module = self.data["Microscope_result"]
         elif rca == "microscope":
             self.alert_module = self.data["Microscope_result"]
         else:
-            self.alert_module = self.data["GIED_result"]            
+            self.alert_module = self.data["GIED_result"]
 
         self.max_workers = max_workers
         self.p_threshold = p_threshold
@@ -106,7 +102,8 @@ class Differentiator:
         - significant result
         if significant return True, else return False
         """
-        data["call_count"] = np.random.randint(low=1200, high=1300, size=len(data))
+        data["call_count"] = np.random.randint(
+            low=1200, high=1300, size=len(data))
 
         # kpi = a * change + b * time + c * history + d *  change * time +  e * time * history + f * change * history + g *  change * time * history +  call_count
         model_present = kpi + \
@@ -119,7 +116,7 @@ class Differentiator:
         # and model.params["change:time"] > -1:
         if model.pvalues['change:time:history'] < threshold:
             # print(data)
-            
+
             # logger.info('P-values for the DDD method is significant')
             return True
         else:
@@ -140,7 +137,8 @@ class Differentiator:
         - significant result
         if significant return True , else return False
         """
-        data["call_count"] = np.random.randint(low=1200, high=1300, size=len(data))
+        data["call_count"] = np.random.randint(
+            low=1200, high=1300, size=len(data))
 
         # kpi = a * change + b * time + c *  change * time + call_count
         model_present = kpi + ' ~ change + time + change:time'
@@ -643,7 +641,7 @@ class Differentiator:
         instance ip with the most similar kpi 
         """
         old_instance_candidate = change_data["host_list_old"]
-        
+
         if len(old_instance_candidate) == 0:
             return None
         else:
@@ -673,7 +671,7 @@ class Differentiator:
                             # logger.info("%s, %s, %s",
                             #             instance["ip_addr"], pair, kpi)
                             data = self.did_concat_input(list1,
-                                                            list2, list3, list4, kpi)
+                                                         list2, list3, list4, kpi)
 
                             before_data = self.before_did_concat_input(
                                 list1, list3, kpi)
@@ -698,13 +696,13 @@ class Differentiator:
         """
         if "alert_metric" in instance and instance["alert_metric"]:
             for pair in instance["alert_metric"]:
-                    for kpi in instance["alert_metric"][pair]:
-                        list1, list2 = self.get_old_instance_data(
-                            instance, pair, kpi)
+                for kpi in instance["alert_metric"][pair]:
+                    list1, list2 = self.get_old_instance_data(
+                        instance, pair, kpi)
 
-                        if list1 is not None:
-                                if detect_outliers(list1,list2 ):
-                                    return instance["ip_addr"]
+                    if list1 is not None:
+                        if detect_outliers(list1, list2):
+                            return instance["ip_addr"]
 
     def determine_gray_change_anomaly(self,
                                       change_data,
@@ -731,7 +729,7 @@ class Differentiator:
                             instance, pair, kpi)
                         if detect_outliers(normal_data=list1, online_data=list2, abnormal_number=3):
                             data = self.did_concat_input(list1,
-                                                            list2, list3, list4, kpi)
+                                                         list2, list3, list4, kpi)
 
                             before_data = self.before_did_concat_input(
                                 list1, list3, kpi)
@@ -747,28 +745,18 @@ class Differentiator:
                     for kpi in instance["alert_metric"][pair]:
                         list1, list2, list3, list4, list5, list6 = self.get_ddd_data(
                             instance, old_instance, pair, kpi)
-                   
+
                         if detect_outliers(normal_data=list1, online_data=list2, abnormal_number=3):
 
                             data = self.ddd_concat_input(list1,
-                                                            list2, list3, list4, list5, list6, kpi)
+                                                         list2, list3, list4, list5, list6, kpi)
 
                             data1 = self.did_concat_input(list1,
-                                                            list2, list3, list4, kpi)                    
+                                                          list2, list3, list4, kpi)
 
                             data2 = self.did_concat_input(list1,
-                                                            list2, list5, list6, kpi)   
-                            # before_data1 = before_did_concat_input(
-                            #     list1, list3, before_call_count, kpi)
+                                                          list2, list5, list6, kpi)
 
-                            # before_data2 = before_did_concat_input(
-                            #     list1, list5, before_call_count, kpi)
-                            # and before_did(before_data1, kpi) == False and before_did(before_data2, kpi) == False:
-
-                            before_data = self.before_did_concat_input(
-                                list1, list5, kpi)
-                            # and before_did(before_data, kpi) == False:
-              
                             if self.did(data1, kpi, self.p_threshold) == True and self.did(data2, kpi, self.p_threshold) == True:
 
                                 return instance["ip_addr"]
@@ -886,29 +874,11 @@ if __name__ == '__main__':
         if case_path == "2023-09-22_10":
             print(case_path)
             case_name = case_path + ".json"
-            base_path = os.path.join(base, case_path, "gied")       
+            base_path = os.path.join(base, case_path, "gied")
             case_file = os.path.join(base_path, case_name)
 
             print(base_path, case_file)
-        
+
             differentiator = Differentiator(base_path, case_file)
 
             result = differentiator.get_all_difference_result()
-
-    # for i in range(len(incident)):
-    #     logger.info(incident[i])
-    #     differentiator = Differentiator(incident[i]["alert_time"],
-    #                                     incident[i]["alert_module"])
-    #     # result = differentiator.get_all_difference_result()
-    #     # result = differentiator.get_all_difference_result("old")
-
-    #     file = differentiator.base_path + \
-    #         incident[i]["alert_module"] + "_change_flow.json"
-
-    #     if os.path.exists(file):
-    #         with open(file, "r+") as f:
-    #             change_data = ujson.load(f)
-
-    #     result = differentiator.difference_method(incident[i]["alert_module"])
-
-    #     print(result)

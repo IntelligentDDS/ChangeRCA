@@ -24,24 +24,24 @@ class Ranker:
         - gray_the: threshold for determine gray change failure
         - p_threshold: threshold for p-vaule to determine sginificant different
         """
-        self.base_path = os.path.join(case_path, rca)       
+        self.base_path = os.path.join(case_path, rca)
         self.case_file = os.path.join(self.base_path, case_name)
         self.case_name = case_name
 
-        with open(self.case_file , 'r') as file:
+        with open(self.case_file, 'r') as file:
             print(self.case_file)
-            self.data  = json.load(file)
+            self.data = json.load(file)
 
         self.alert_time = self.data["detect_time"]
         self.rca = rca
-        self.alert_time_stamp =  self.data["detect_timestamp"]
+        self.alert_time_stamp = self.data["detect_timestamp"]
         if rca == "microrca":
             self.alert_module = self.data["Microrca_result"]
         elif rca == "microscope":
             self.alert_module = self.data["Microscope_result"]
         else:
-            self.alert_module = self.data["GIED_result"]     
-        self.root_module = self.data["fault_release_service"]    
+            self.alert_module = self.data["GIED_result"]
+        self.root_module = self.data["fault_release_service"]
 
         self.day = self.data["detect_time"].split(" ")[0]
 
@@ -57,11 +57,11 @@ class Ranker:
         gray_change_result = None
         final_score = {}
         final_score[self.alert_module] = {}
-        
+
         logger.info("-------------------------------------------------------")
         logger.info("---------------------Case Information------------------")
         logger.info("%s, %s, rca: %s, label: %s", self.case_name,  self.alert_time,
-                            self.alert_module, self.root_module)
+                    self.alert_module, self.root_module)
 
         if self.alert_module in self.data["plan"]:
             file = self.alert_module + ".json"
@@ -73,7 +73,7 @@ class Ranker:
                     change_data = json.load(f)
             else:
                 logger.error("file %s not exist", file)
-            
+
             differentiator = Differentiator(self.base_path,
                                             self.case_file, self.rca, self.p_threshold)
 
@@ -92,7 +92,7 @@ class Ranker:
                     logger.info(
                         "-------------gray change fault %s ----------------", final_score)
                     return final_score
-           
+
                 old_difference_score = differentiator.difference_method(
                     self.alert_module, "old")
 
@@ -102,7 +102,7 @@ class Ranker:
                 # logger.info("gray_change_result %s, %s",
                 #             gray_change_result, old_difference_score)
 
-                if  gray_change_result[2] + old_difference_score[2] == 1:
+                if gray_change_result[2] + old_difference_score[2] == 1:
                     # one point fault
                     final_score[self.alert_module]["fault_type"] = "other"
                     logger.info(
@@ -121,17 +121,17 @@ class Ranker:
 
         final_score = self.suspicious_change_ranker()
 
-        final_score = dict(sorted(final_score.items(), key=lambda x: (x[1]['score'], random.random()), reverse=True))
+        final_score = dict(sorted(final_score.items(), key=lambda x: (
+            x[1]['score'], random.random()), reverse=True))
 
         # final_score = OrderedDict(
         #     sorted(final_score.items(), key=lambda x: (-x[1]['score'])))
 
         logger.info("-------------------final score------------------")
         logger.info("%s, %s, rca: %s, label: %s", self.case_name,  self.alert_time,
-                            self.alert_module, self.root_module)
+                    self.alert_module, self.root_module)
 
         return final_score
-
 
     def root_cause_change_identifycation_wodep(self):
         """
@@ -142,11 +142,11 @@ class Ranker:
         gray_change_result = None
         final_score = {}
         final_score[self.alert_module] = {}
-        
+
         logger.info("-------------------------------------------------------")
         logger.info("---------------------Case Information------------------")
         logger.info("%s, %s, rca: %s, label: %s", self.case_name,  self.alert_time,
-                            self.alert_module, self.root_module)
+                    self.alert_module, self.root_module)
 
         for svc in self.data["plan"]:
             file = svc + ".json"
@@ -158,7 +158,7 @@ class Ranker:
                     change_data = json.load(f)
             else:
                 logger.error("file %s not exist", file)
-            
+
             differentiator = Differentiator(self.base_path,
                                             self.case_file, self.rca, self.p_threshold)
 
@@ -166,8 +166,8 @@ class Ranker:
                 # alert module gray change
                 gray_change_result = differentiator.difference_method(
                     svc)
-               
-                if gray_change_result[1] is not None and  gray_change_result[1] > self.gray_the:
+
+                if gray_change_result[1] is not None and gray_change_result[1] > self.gray_the:
                     logger.info("gray_change_result %s", gray_change_result)
                     final_score[gray_change_result[0]] = {}
                     final_score[gray_change_result[0]
@@ -187,11 +187,9 @@ class Ranker:
 
         logger.info("-------------------final score------------------")
         logger.info("%s, %s, rca: %s, label: %s", self.case_name,  self.alert_time,
-                            self.alert_module, self.root_module)
+                    self.alert_module, self.root_module)
 
         return final_score
-
-
 
     def suspicious_change_ranker(self):
         """
@@ -202,7 +200,7 @@ class Ranker:
         final_score = {}
 
         differentiator = Differentiator(self.base_path,
-                                            self.case_file, self.rca, self.p_threshold)
+                                        self.case_file, self.rca, self.p_threshold)
 
         deepth_list = self.get_deepth()
         deep_score = self.dependency_ranker(deepth_list)
@@ -221,15 +219,15 @@ class Ranker:
                     final_score[item]["fault_type"] = "change"
 
         for item in time_score:
-            if item not in final_score and item in difference_score and time_score[item]!=0:
+            if item not in final_score and item in difference_score and time_score[item] != 0:
                 # logger.info("%s, %s, %s, %s", difference_score[item][2], old_difference_score[item] [2], difference_score[item][3], old_difference_score[item][3])
                 # if difference_score[item][1] == "gray":
                 final_score[item] = {}
-                final_score[item]["score"] = time_score[item] + difference_score[item][0] +  deep_score[item]
+                final_score[item]["score"] = time_score[item] + \
+                    difference_score[item][0] + deep_score[item]
                 final_score[item]["fault_type"] = "suspicious"
 
         return final_score
-
 
     def determine_resource_fault(self):
         """
@@ -286,7 +284,6 @@ class Ranker:
 
         return anomaly_result
 
-
     def get_deepth(self):
         """
         func get_deepth: get deepth of all service
@@ -298,16 +295,15 @@ class Ranker:
         spicious_set_name = "spicious_set_" + self.rca
         for item in self.data["plan"]:
             if item in self.data[spicious_set_name]:
-                file = self.base_path + "/" + item  + ".json"
+                file = self.base_path + "/" + item + ".json"
 
                 with open(file, 'r') as file:
-                    data  = json.load(file) 
-            
+                    data = json.load(file)
+
                 deepth_dict[item] = int(data["deepth"])
 
         # logger.info(deepth_list)
         return deepth_dict
-
 
     def get_last_change_time(self):
         """
@@ -320,7 +316,7 @@ class Ranker:
         for module in self.data["plan"]:
             if module in self.data[spicious_set_name]:
                 processes = self.data["plan"][module]["process"]
-                
+
                 last_time = 1
                 for process in processes:
                     # logger.info("process: %s, %s",module, process)
@@ -332,7 +328,6 @@ class Ranker:
 
         # logger.info(change_time_list)
         return change_time_dict
-
 
     def dependency_ranker(self, deepth_list):
         """
@@ -400,7 +395,7 @@ class Ranker:
                 # elif delta <= 30 * 60:
                 #     score_list[item] = 8
 
-                if  960 < delta <= 1920:
+                if 960 < delta <= 1920:
                     score_list[item] = 1
                 elif 480 < delta <= 960:
                     score_list[item] = 2
@@ -426,7 +421,7 @@ class Ranker:
 
 
 if __name__ == '__main__':
-    base_path = "/mnt/multidata/2023-09-19/change"
+    base_path = "/mnt/multidata/2023-09-23/change"
     case_path_list = os.listdir(base_path)
 
     for case_file in case_path_list:
@@ -435,7 +430,3 @@ if __name__ == '__main__':
         ranker = Ranker(case_file, case_name, "gied")
 
         result = ranker.root_cause_change_identifycation()
-        # print(result)
-
-    # result = ranker.root_cause_change_identifycation()
-    # print(result
